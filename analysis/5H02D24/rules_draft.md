@@ -62,9 +62,11 @@ Nguyên tắc chung: **hình phải minh hoạ đúng nghĩa đen từ khoá tro
 - **Nhãn tính năng:** pill ✅ xanh lá (cộng dồn), ❌ đỏ cho nỗi đau, chữ cong xanh lá trên vật thể, icon đồng hồ cho 8s, mũi tên/vòng tròn đỏ để chỉ chi tiết.
 - **Tên SP** dạng chữ viết tay hồng/trắng, có ở cảnh HERO, RESULT và CTA.
 
-## 6. Câu hỏi cần Yan trả lời
+## 6. Đã chốt với Yan (22/11/2026)
 
-1. Kho source đã được **cắt sẵn thành từng hành động ngắn** (2–5s), hay là các file quay dài phải cắt lấy đoạn?
-2. Cảnh hook **KOL nói trước máy quay** có nằm trong kho source không, hay là quay riêng cho từng video?
-3. Các nhãn tính năng (✅, chữ cong, đồng hồ 8s) Yan đang lưu thành template/preset trong CapCut chưa? Nếu có thì mình chỉ xuất danh sách mốc thời gian để Yan kéo vào.
-4. Phụ đề: Yan dùng auto caption của CapCut rồi sửa, hay muốn mình xuất .srt theo đúng chữ trong kịch bản?
+| Câu hỏi | Trả lời | Ảnh hưởng đến cách làm |
+|---|---|---|
+| Kho source cắt sẵn hay quay dài? | **File quay dài**, phải cắt lấy đoạn | Lập chỉ mục theo **đoạn hành động** bên trong mỗi file: lưu `file, in, out, nhóm, mô tả`. Khi ghép thì cắt đúng đoạn, bỏ phần đầu/cuối lúc tay đưa vào/rút ra hoặc máy quay rung |
+| Hook KOL có trong kho? | **Quay riêng cho từng video** | Hook KOL là đầu vào riêng mỗi video (Yan đưa file). Quy tắc chọn source chỉ áp dụng từ sau hook. Nếu hook dạng B-roll thì lấy từ nhóm PAIN_* |
+| Nhãn tính năng đã lưu template? | Chưa, lưu nếu cần | Đề xuất Yan lưu mỗi nhãn (✅ thuỷ tinh, ✅ inox, chữ cong 300ml, gioăng, đồng hồ 8s, tên SP, mũi tên đỏ) thành preset trong CapCut. Mình xuất `overlay_cues.csv`: thời điểm + nhãn nào, Yan kéo preset vào đúng chỗ |
+| Phụ đề | File càng đúng chữ càng tốt, vẫn phải sửa được animation trong CapCut | Xuất `.srt`: **chữ lấy từ kịch bản**, **thời gian lấy từ whisper**, 2–4 từ/dòng, ngắt ở dấu câu (`tools/make_srt.py`). Cần Yan thử import vào CapCut để kiểm tra có áp được kiểu highlight theo từng từ không |
