@@ -60,10 +60,19 @@ output\<tên video>\
 └── preview.mp4
 ```
 
-## Việc đang chờ
-1. Yan gửi thông tin brand (guideline, mã màu, font, ảnh cài đặt template CapCut, quy ước tên preset) → viết `rules/brand/bear.md`, `rules/brand/bear-me-be.md`.
-2. Lập chỉ mục kho source cho mã làm thử đầu tiên (Yan chọn mã).
-3. Dựng thử 1 video hoàn chỉnh: voice thô + kịch bản → đầu ra như trên.
+## Việc đang chờ (theo thứ tự)
+1. Yan cài đặt theo `docs/huong-dan-cai-dat-windows.md` → kiểm tra Claude đọc được bối cảnh.
+2. Yan gửi thông tin brand (guideline, mã màu, font, ảnh cài đặt template CapCut, quy ước tên preset) → viết `rules/brand/bear.md`, `rules/brand/bear-me-be.md`.
+3. Kiểm tra file project CapCut trên **bản sao** (`%LOCALAPPDATA%\CapCut\User Data\Projects\...`): nếu không mã hoá thì tạo draft trực tiếp được (clip + voice + text + SFX trên timeline).
+4. Kiểm tra computer use trong app Claude Desktop (Settings → System/Capabilities → Computer use). Thử đặt 3–5 nhãn text + 2–3 SFX trên project mẫu, đo tốc độ và độ chính xác.
+5. Lập chỉ mục kho source cho mã làm thử đầu tiên (Yan chọn mã).
+6. Dựng thử 1 video hoàn chỉnh: voice thô + kịch bản → đầu ra như trên.
+
+## Cách đưa vào CapCut (thứ tự ưu tiên)
+1. Ghi thẳng draft CapCut, nếu bước 3 cho thấy file không mã hoá.
+2. Kết hợp: Yan kéo clip/voice/.srt (~1 phút) → Claude dùng computer use đặt text preset + SFX từ thư viện CapCut → Yan chỉnh tinh.
+3. Yan tự làm hết theo `overlay_cues.csv`, `sfx_cues.csv`.
+- Sửa một cảnh: Claude xuất lại đúng file, giữ số thứ tự. Yan dùng Replace (Thay thế) trong CapCut.
 
 ## Nguyên tắc khi làm
 - **Không sửa/xoá file gốc** trong `source\` hay voice. Mọi đầu ra ghi vào `output\`.
