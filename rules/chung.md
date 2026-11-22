@@ -1,25 +1,50 @@
 # Quy tắc chung: dựng video ads Sube
 
 > Áp dụng cho **mọi mã sản phẩm**. Phần riêng của từng mã (từ khoá → nhóm source, overlay) nằm ở `rules/sp/<mã>.md`.
-> Rút ra từ 2 video mẫu của mã 5H02D24 (22/11/2026). Gặp mã mới có cấu trúc khác thì cập nhật file này.
+> Rút ra từ 6 video mẫu của 3 mã: 5H02D24, 045KN, 5H12V78 (22/11/2026). Gặp mã mới có cấu trúc khác thì cập nhật file này.
 
 ## 1. Khung video
 
 | Phần | Thời lượng | Số cảnh | Nội dung hình |
 |---|---|---|---|
-| Hook | 3–5s | 1–2 | KOL nói trước máy quay (**quay riêng từng video, Yan đưa file**) hoặc B-roll lấy từ nhóm PAIN_* của SP |
-| Nỗi đau | 3–9s | 2–4 | Minh hoạ đúng vấn đề khách gặp khi chưa có SP |
-| Giới thiệu SP | ~2–3s | 1 | **Hero shot SP**, luôn có tên SP + mã |
-| Tính năng | 20–28s | 8–12 | Mỗi tính năng một nhóm source (xem file SP) |
-| Lợi ích/CTA | 7–9s | 2 | SP + thành phẩm/kết quả dùng, nền studio, mũi tên đỏ chỉ xuống góc trái (giỏ hàng) |
+| Hook + nỗi đau | 5–12s | 3–8 | Xem các kiểu hook bên dưới |
+| Giới thiệu SP | ~2–4s | 1–2 | **Hero shot SP**, luôn có tên SP + mã |
+| Thân video | 20–45s | 8–20 | Một trong các dạng thân bên dưới |
+| Lợi ích/CTA | 5–10s | 2–6 | SP + thành phẩm hoặc cảnh mẹ con, mũi tên chỉ xuống góc trái (giỏ hàng) |
 
+- Video dài 47–69s. Mã nhiều tính năng thì video dài hơn.
 - Chuyển từ nỗi đau sang SP có thể chèn thẻ ❌ (khoảng 0.3s) hoặc hiệu ứng loé sáng/trượt.
 - Quy tắc chọn source chỉ áp dụng **từ sau hook KOL**.
+
+### Các kiểu hook đã gặp
+| Kiểu | Mô tả | Ví dụ |
+|---|---|---|
+| KOL nói trước máy quay | Đặt câu hỏi gây tò mò, cầm SP lên | 5H02D24 V1 |
+| B-roll nỗi đau | Cận cảnh vấn đề, không có người nói | 5H02D24 V2 |
+| Vlog kể chuyện | KOL ở bếp nhà, tông tối viền phim, phụ đề trắng giữa màn hình | 045KN V3 |
+| "Nổ inbox" | KOL cầm SP + chồng bong bóng chat câu hỏi của khách | 045KN V4 |
+| UGC đời thường | Hình quay điện thoại: mẹ rửa bình, bé bú, mẹ thức đêm | 5H12V78 V5, V6 |
+
+Hook KOL/vlog/inbox là **quay riêng từng video** (Yan đưa file). Hook B-roll/UGC thì lấy từ nhóm PAIN_* / LIFESTYLE_* trong kho.
+
+### Các dạng thân video đã gặp
+| Dạng | Cách dựng | Ví dụ |
+|---|---|---|
+| Danh sách tính năng | Mỗi tính năng 1–3 cảnh, nhãn ✅ cộng dồn | 5H02D24, 5H12V78 |
+| Quy trình theo bước | Pill bậc thang có mũi tên, mỗi bước 1 cảnh top-down | 045KN |
+| Hỏi–đáp (FAQ) | Mỗi đoạn mở bằng pill câu hỏi → cảnh demo trả lời | 045KN V4 |
+| So sánh cũ/mới | Chia đôi màn hình, nhãn "Phiên bản mới / cũ" | 045KN V4 |
+| Chia theo bộ phận | "Khoang trái / Khoang phải", ✅ cộng dồn riêng từng bộ phận | 5H12V78 V6 |
+
+Một video có thể kết hợp nhiều dạng.
+
+### Khối CTA cố định
+Một số mã có **khối CTA giống hệt nhau** giữa các video (cùng cảnh, cùng thứ tự, cùng sticker deal), ví dụ 045KN. Với các mã này thì **dùng lại nguyên khối** và chỉ co giãn độ dài từng cảnh theo voice. Khối được ghi trong file SP.
 
 ## 2. Quy tắc cắt
 
 - **Mỗi cảnh khớp với một cụm ý của voice.** Cắt đúng chỗ ngắt câu hoặc dấu phẩy, không cắt giữa từ.
-- Độ dài cảnh: **1.1–5.3s, trung bình khoảng 2.3s**.
+- Độ dài cảnh: **1–5s, trung bình 2.0–2.3s** (giống nhau ở cả 3 mã).
 - Câu voice dài hơn 3.5s mà có 2 ý thì tách thành 2 cảnh.
 - Cảnh demo kéo dài (bấm giờ, rửa, thao tác liên tục) được phép dài 3.5–5s.
 - Cảnh CTA cuối dài nhất (4–5s), kéo đến hết voice.
@@ -29,6 +54,9 @@
 
 - **Hình phải minh hoạ đúng nghĩa đen từ khoá trong câu voice.** Ví dụ voice nói số liệu (dung tích, thời gian) thì hình phải cho thấy số liệu đó: cầm cối, đồng hồ bấm giờ…
 - Mỗi câu voice → tìm từ khoá → tra bảng "từ khoá → nhóm" trong file SP → chọn một source trong nhóm.
+- **Câu nói về cảm xúc/lợi ích** (giấc ngủ của mẹ, con ăn ngon, nhàn hơn) → dùng cảnh **LIFESTYLE**: em bé ăn, mẹ bế con, mẹ thức đêm.
+- **Câu nói về chứng nhận/kiểm định** → dùng cảnh **bằng chứng**: ảnh giấy kiểm nghiệm có khoanh đỏ.
+- **Câu nói về con số** (thời gian, dung tích, nhiệt độ, %) → hình phải cho thấy con số đó: đồng hồ bấm giờ, màn hình máy, nhãn số.
 - Câu không có từ khoá nào khớp: dùng cảnh SP đang hoạt động hoặc cảnh ấn máy, và đánh dấu `can_xem` trong `edit_map.csv` để Yan kiểm tra.
 
 ## 4. Đa dạng hoá source
@@ -41,6 +69,7 @@
 
 ## 5. Phụ đề
 
+- **Không phải mã nào cũng có phụ đề.** 5H02D24 và 5H12V78 có, 045KN thì không (chỉ có pill tiêu đề). File SP ghi rõ.
 - Kiểu karaoke, 2–4 từ/dòng, đặt giữa phía dưới. Chữ trắng viền, một từ khoá to hơn, màu xanh lá/vàng.
 - Xuất `.srt`: **chữ lấy từ kịch bản**, **thời gian lấy từ whisper** (`tools/make_srt.py`). Ngắt dòng ở dấu câu, tối đa 4 từ hoặc 1.6s.
 - Yan import vào CapCut (Captions → Import) rồi áp style/animation hàng loạt. *Đang chờ Yan thử xem highlight theo từng từ có chạy với file .srt không.*

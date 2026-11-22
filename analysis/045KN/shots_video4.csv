@@ -1,0 +1,29 @@
+stt,bat_dau,ket_thuc,do_dai,phan,cau_voice,canh_source,nhom_source,overlay_tinh_nang
+1,0.0,2.5,2.5,Hook inbox,Bao nhiêu mẹ inbox hỏi em về mẫu nâng cấp 045KN,KOL áo hồng tạp dề kẻ cầm máy,HOOK_INBOX,Nổ inbox rồi các mẹ ơi!!! + chồng bong bóng chat câu hỏi khách
+2,2.5,4.0,1.5,Hook inbox,Nay em giải đáp bằng video này nha,Máy đứng riêng,HERO,
+3,4.0,5.8,1.8,FAQ 1,Bản nâng cấp này có thật sự khoẻ không?,3 máy xếp hàng,HERO_GROUP,Pill câu hỏi: Bản nâng cấp này có thực sự khoẻ không?
+4,5.8,7.6,1.8,FAQ 1,Đúng nghĩa là vừa khoẻ vừa nhàn luôn nha các mom,Cận máy,HERO,Chữ to: VỪA KHOẺ VỪA NHÀN!!!!
+5,7.6,9.6,2.0,FAQ 2,Còn nếu ai đang lo nấu xong có bị bám dính cối hay không,"Mở nắp cối nhìn từ trên, cháo trắng",F_KHONG_DINH,Pill câu hỏi: Nấu xong có bám dính cối không?
+6,9.6,11.5,1.9,FAQ 2,thì đây để em show thực tế cho xem luôn,Thìa vàng khuấy cháo trong cối,F_KHONG_DINH,
+7,11.5,13.0,1.5,FAQ 2,Đổ cháo xong mà cối trơn tuột,Đổ cháo trắng ra bát (lọc màu hồng),F_KHONG_DINH,Cối trơn sạch bóng
+8,13.0,14.6,1.6,FAQ 2,"sạch bóng, không dính một tẹo nào luôn",Lau cối bằng khăn,F_KHONG_DINH,Lấp lánh; chuyển cảnh trượt
+9,14.6,16.4,1.8,Tính năng,Bí quyết là nhờ bản nâng cấp này,Đặt cối inox vào máy,F_INOX,
+10,16.4,17.9,1.5,Tính năng,đã được gia cố phần trục xay,"Cận cụm lưỡi dao trên tay, nền trắng",F_LUOI_DAO,
+11,17.9,21.5,3.6,So sánh,siêu chắc chắn,"Chia đôi màn hình: nhấc lưỡi dao, nhấc cối, nắp",SO_SANH_CU_MOI,Phiên bản mới / Phiên bản cũ
+12,21.5,23.4,1.9,Tính năng,(tiếp),Lắp lưỡi dao vào cối,F_INOX,
+13,23.4,25.4,2.0,Tính năng,(tiếp),Lắp nắp trong,F_INOX,
+14,25.4,28.4,3.0,Quy trình,(whisper bỏ sót),"Top-down cho gạo, rau, thịt vào cối",STEP_CHO_VAO_COI,Pill bậc thang 3 bước
+15,28.4,30.3,1.9,Quy trình,"Máy tự động hấp, nấu, xay khép kín",Bấm bảng điều khiển,STEP_CHON_CHE_DO,+ Máy tự động nấu – xay
+16,30.3,32.2,1.9,Tính năng,chỉ 40 phút có ngay bát cháo nóng hổi cho con,"Mở nắp cháo cà chua, khuấy",F_40PHUT,⏰ Quy trình tự động 40 phút
+17,32.2,34.4,2.2,Tính năng,"Từ thịt cá, tôm cua",Cận màn hình đếm 40/20/15,F_MOI_NGUYEN_LIEU,Vòng tròn nét đứt; Cân mọi loại nguyên liệu
+18,34.4,37.4,3.0,Tính năng,"đến rau củ quả cứng, mẹ thoả sức đổi món liên tục mà không cần sắm thêm dụng cụ lỉnh kỉnh nào","Top-down gắp bí đỏ, khoai, rau vào cối",F_MOI_NGUYEN_LIEU,
+19,37.4,43.0,5.6,Tính năng,"Cấu trúc thức ăn chuẩn theo từng độ tuổi, từ nhuyễn mịn đến tăng thô linh hoạt, giúp bé tập nhai giỏi mà không trớ hay nghẹn","Tay cầm cối nhìn từ trên: rau xanh, thịt thô, gạo, củ dền",F_DO_THO,3 mức độ thô mịn
+20,43.0,45.4,2.4,Tính năng,"Chưa hết đâu nha, máy có chế độ tự rửa bằng nước nóng",Bấm nút Vệ sinh,F_TU_VE_SINH,Tự động vệ sinh; vòng nét đứt + ✅
+21,45.4,47.4,2.0,Tính năng,Nay lại còn được tặng kèm cọ rửa và muỗng khuấy,KOL tạp dề kỳ lân cầm muỗng & cọ,TANG_KEM,🎁 Tặng kèm muỗng khuấy & cọ rửa chuyên dụng
+22,47.4,48.8,1.4,Tính năng,dùng xong tráng nhẹ cọ là sạch bong,Cọ lưỡi dao dưới vòi,TANG_KEM,
+23,48.8,50.5,1.7,CTA,Tranh thủ cơ hội duy nhất trong tháng này để nhận trọn gói,Tay đặt máy trên kệ,CTA_BLOCK,Deal hời fanpage
+24,50.5,52.3,1.8,CTA,Giảm sốc 50%,Cận máy,CTA_BLOCK,-50%
+25,52.3,53.4,1.1,CTA,voucher 150k,Máy trên kệ,CTA_BLOCK,Sticker Voucher 150K
+26,53.4,55.0,1.6,CTA,miễn phí giao hàng hoả tốc,Đổ cháo cà chua ra bát,CTA_BLOCK,Sticker Free shipping
+27,55.0,57.3,2.3,CTA,"bảo hành 18 tháng, số lượng ưu đãi có hạn",Tay đặt bát cạnh máy,CTA_BLOCK,Sticker Bảo hành 18 tháng
+28,57.3,59.6,2.3,CTA,Mẹ nhấn ngay nút đặt hàng góc trái màn hình để rinh bản mới nhất cho bé nha,Máy + bát cháo,CTA_BLOCK,Chốt đơn tại đây!!!! + mũi tên đỏ ↙
