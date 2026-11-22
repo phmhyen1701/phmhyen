@@ -33,6 +33,7 @@ D:\Sube\                      ← mở Claude ở đây
 | `analysis/<mã>/` | Bảng phân cảnh video mẫu (`shots_video*.csv`), kết quả whisper, kịch bản đối chiếu |
 | `tools/make_srt.py` | Tạo .srt: chữ lấy từ kịch bản, thời gian lấy từ whisper (so khớp mềm) |
 | `tools/shot_table.py` | Tạo bảng phân cảnh nháp cho video mẫu (mốc cắt cảnh + lời voice) |
+| `tools/sfx_classify.py` | Nhận diện SFX + kiểu nhạc trong video mẫu (cần tách voice bằng demucs trước) |
 | `docs/huong-dan-cai-dat-windows.md` | Hướng dẫn cài đặt trên máy Yan |
 
 ## Các quyết định đã chốt
@@ -46,7 +47,7 @@ D:\Sube\                      ← mở Claude ở đây
 | Phụ đề | Tuỳ video: nhiều text overlay thì không có phụ đề, storytelling thì có. Luôn xuất `.srt`, Yan quyết định. Còn chờ Yan thử xem highlight theo từng từ có chạy với .srt import không |
 | Text overlay | Mỗi mã SP chọn nhãn **Bear** hoặc **Bear mẹ bé** lúc dựng. Đề xuất: Yan lưu preset CapCut cho từng loại text, mình xuất `overlay_cues.csv` (thời điểm, preset, nội dung). Một nhãn đã có template CapCut |
 | CTA | Chọn lại source mỗi video, sticker bám theo từng ý khuyến mãi trong voice |
-| Nhạc + SFX | Dùng thư viện CapCut. Mình xuất danh sách mốc SFX |
+| Nhạc + SFX | Dùng thư viện CapCut. Mình xuất danh sách mốc SFX theo `rules/chung.md` mục 7: ding khi nhãn bật lên, chuông/tiền khi có sticker deal, không whoosh, tắt âm gốc source, nhạc thấp hơn voice ~18–20 dB, voice -13 LUFS. Chờ Yan cho tên SFX hay dùng trong CapCut |
 
 ## Đầu ra mỗi video
 ```

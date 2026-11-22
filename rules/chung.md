@@ -57,11 +57,19 @@ Voice không nhắc ý nào thì không dùng sticker đó.
 
 ## 2. Quy tắc cắt
 
+### Làm sạch voice (Yan duyệt 22/11)
+- Câu đọc nhiều lần: **giữ lần đọc trọn vẹn cuối cùng**.
+- Khoảng lặng dài: rút về **0.1–0.15s**, giữ hơi thở tự nhiên.
+- Câu có trong kịch bản mà voice không đọc thì bỏ, voice thật là chuẩn.
+
+### Cắt cảnh
 - **Mỗi cảnh khớp với một cụm ý của voice.** Cắt đúng chỗ ngắt câu hoặc dấu phẩy, không cắt giữa từ.
 - Độ dài cảnh: **1–5s, trung bình 2.0–2.3s** (giống nhau ở cả 3 mã).
 - Câu voice dài hơn 3.5s mà có 2 ý thì tách thành 2 cảnh.
 - Cảnh demo kéo dài (bấm giờ, rửa, thao tác liên tục) được phép dài 3.5–5s.
 - Cảnh CTA cuối dài nhất (4–5s), kéo đến hết voice.
+- **Tránh 3 cảnh liên tiếp cùng góc máy** (ví dụ 3 cảnh top-down liền nhau). *(Yan duyệt 22/11)*
+- **Source ngắn hơn cảnh:** ghép 2 đoạn cùng nhóm, **không dùng slow-mo**. *(Yan duyệt 22/11)*
 - **Source là file quay dài:** chỉ lấy đúng đoạn hành động. Bỏ phần đầu/cuối lúc tay đưa vào/rút ra, máy quay rung hoặc lấy nét.
 
 ## 3. Nguyên tắc chọn source
@@ -110,7 +118,38 @@ Voice không nhắc ý nào thì không dùng sticker đó.
 - Yan lưu mỗi nhãn thành preset trong CapCut.
 - Mình xuất `overlay_cues.csv` (thời điểm bắt đầu, kết thúc, tên nhãn) để Yan kéo preset vào.
 
-## 7. Đầu vào cần cho một mã SP mới
+## 7. Âm thanh (phân tích 6 video mẫu, 22/11)
+
+> Cách đo: tách voice bằng demucs, nhận diện loại âm bằng mô hình AudioSet (`tools/sfx_classify.py`).
+> Kết quả từng video: `analysis/<mã>/sfx_video*.csv`. Thời điểm sai số khoảng ±0.5s. SFX quá nhỏ có thể bị sót.
+
+### Voice và nhạc nền
+| Hạng mục | Đo được | Quy tắc |
+|---|---|---|
+| Âm lượng voice | khoảng **-12.5 LUFS** (cả 6 video từ -12.1 đến -13.3) | Chuẩn hoá `voice_clean.wav` về **-13 LUFS** |
+| Nhạc nền | Có ở **100% thời lượng**, bắt đầu từ giây 0–1, nhỏ dần ở cuối | Nhạc chạy suốt video, fade out 1–2s cuối |
+| Nhạc so với voice | Nhạc thấp hơn voice **14–22 dB** (trung bình khoảng 19 dB) | Đặt nhạc thấp hơn voice **khoảng 18–20 dB**. Trong CapCut thường là volume nhạc 10–15% |
+| Kiểu nhạc | Không lời, vui tươi; có huýt sáo (5H02D24 V1), guitar/ukulele | Nhạc vui, không lời, loại được dùng cho ads TikTok |
+| Âm gốc của source | **Không phát hiện** tiếng máy xay, nước, bát đĩa dù có nhiều cảnh như vậy | **Tắt tiếng toàn bộ clip source** |
+
+### SFX: tổng 42 điểm trong 6 video
+| SFX | Số lần | Xuất hiện khi | Quy tắc |
+|---|---|---|---|
+| **Ding** | 35 | **Nhãn tính năng bật lên**: pill ✅, chữ cong, pill câu hỏi, pill bậc thang. Đặt ngay khi nhãn hiện | Mỗi nhãn tính năng chính → 1 ding. Khoảng 40–60% số nhãn có ding: ưu tiên nhãn ✅ và pill câu hỏi, bỏ qua nhãn phụ |
+| **Ding-dong / thông báo** | (trong 35 trên) | Hook "nổ inbox" lúc bong bóng chat hiện (045KN V4); nhãn cảnh báo lớn "BẮT BUỘC" (5H12V78 V6) | Mỗi bong bóng chat / nhãn cảnh báo → 1 tiếng thông báo |
+| **Chuông / tiền (cash register)** | 4 | **Sticker khuyến mãi CTA**: -50%, Deal hời fanpage, Bảo hành 18 tháng | Mỗi sticker deal → 1 tiếng chuông hoặc tiền |
+| **Gõ phím** | 2 | Nhãn hiện kiểu đánh máy (045KN V4, "3 mức độ thô mịn") | Chỉ dùng khi nhãn có animation đánh máy |
+| **Tick đồng hồ** | 1 | Cảnh bấm giờ 8 giây (5H02D24 V2) | Cảnh có icon đồng hồ → tick, có thể bỏ |
+| **Whoosh** | **0** | — | **Không dùng whoosh ở chuyển cảnh**, kể cả chuyển cảnh trượt/loé sáng |
+
+### Tóm tắt: khi nào đặt SFX
+1. Nhãn tính năng chính bật lên → **ding**
+2. Bong bóng chat / nhãn cảnh báo → **thông báo**
+3. Sticker giá / khuyến mãi → **chuông hoặc tiền**
+4. Chuyển cảnh → **không có SFX**
+5. Âm gốc source → **tắt hết**
+
+## 8. Đầu vào cần cho một mã SP mới
 
 | Đầu vào | Bắt buộc | Dùng để |
 |---|---|---|

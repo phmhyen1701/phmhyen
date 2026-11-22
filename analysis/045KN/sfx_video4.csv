@@ -1,0 +1,14 @@
+bat_dau,ket_thuc,dinh,loai,nhan_audioset,diem,lech_cat_canh_s,canh,nhom_source,overlay,voice
+0.0,1.0,0.5,ding,Ding-dong,0.21,-2.0,1,HOOK_INBOX,Nổ inbox rồi các mẹ ơi!!! + chồng bong bóng chat câu hỏi khách,Bao nhiêu mẹ inbox hỏi em về mẫu nâng cấp 045KN
+1.5,2.5,2.0,ding,Ding-dong,0.17,-0.5,1,HOOK_INBOX,Nổ inbox rồi các mẹ ơi!!! + chồng bong bóng chat câu hỏi khách,Bao nhiêu mẹ inbox hỏi em về mẫu nâng cấp 045KN
+3.5,4.75,4.25,ding,Ding,0.27,0.25,3,HERO_GROUP,Pill câu hỏi: Bản nâng cấp này có thực sự khoẻ không?,Bản nâng cấp này có thật sự khoẻ không?
+7.0,8.75,8.0,ding,Ding,0.37,0.4,5,F_KHONG_DINH,Pill câu hỏi: Nấu xong có bám dính cối không?,Còn nếu ai đang lo nấu xong có bị bám dính cối hay không
+25.75,27.25,26.5,ding,Ding,0.46,1.1,14,STEP_CHO_VAO_COI,Pill bậc thang 3 bước,(whisper bỏ sót)
+26.75,29.5,27.75,ding,Ding,0.37,-0.65,14,STEP_CHO_VAO_COI,Pill bậc thang 3 bước,(whisper bỏ sót)
+36.75,38.0,37.25,gõ phím,Typing,0.21,-0.15,18,F_MOI_NGUYEN_LIEU,,"đến rau củ quả cứng, mẹ thoả sức đổi món liên tục mà không c"
+36.75,38.0,37.25,gõ phím,Computer keyboard,0.24,-0.15,18,F_MOI_NGUYEN_LIEU,,"đến rau củ quả cứng, mẹ thoả sức đổi món liên tục mà không c"
+40.5,41.5,41.0,ding,Ding,0.15,-2.0,19,F_DO_THO,3 mức độ thô mịn,"Cấu trúc thức ăn chuẩn theo từng độ tuổi, từ nhuyễn mịn đến "
+42.25,43.75,43.25,ding,Ding,0.2,0.25,20,F_TU_VE_SINH,Tự động vệ sinh; vòng nét đứt + ✅,"Chưa hết đâu nha, máy có chế độ tự rửa bằng nước nóng"
+43.25,44.25,43.75,ding,Ding,0.2,0.75,20,F_TU_VE_SINH,Tự động vệ sinh; vòng nét đứt + ✅,"Chưa hết đâu nha, máy có chế độ tự rửa bằng nước nóng"
+49.0,50.0,49.5,chuông,Bell,0.15,0.7,23,CTA,Deal hời fanpage,Tranh thủ cơ hội duy nhất trong tháng này để nhận trọn gói
+51.25,52.25,51.75,ding,Ding,0.15,-0.55,24,CTA,-50%,Giảm sốc 50%
