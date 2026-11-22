@@ -64,7 +64,11 @@ output\<tên video>\
 ## Việc đang chờ (theo thứ tự)
 1. Yan cài đặt theo `docs/huong-dan-cai-dat-windows.md` → kiểm tra Claude đọc được bối cảnh.
 2. Yan gửi thông tin brand (guideline, mã màu, font, ảnh cài đặt template CapCut, quy ước tên preset) → viết `rules/brand/bear.md`, `rules/brand/bear-me-be.md`.
-3. Kiểm tra file project CapCut trên **bản sao** (`%LOCALAPPDATA%\CapCut\User Data\Projects\...`): nếu không mã hoá thì tạo draft trực tiếp được (clip + voice + text + SFX trên timeline).
+3. Thử **tạo draft CapCut mới** bằng thư viện cộng đồng (VectCutAPI/CapCutAPI có kèm MCP server, hoặc pyCapCut / pyJianYingDraft): tạo draft nhỏ gồm 3 clip + voice + 1 text → chép vào thư mục draft của CapCut → mở bằng bản CapCut của Yan xem có chạy không. Lưu ý:
+   - Đây là công cụ không chính thức, CapCut cập nhật có thể làm hỏng. Đọc code trước khi cài.
+   - Bản mới mã hoá `draft_content.json`, nên **đọc/sửa project cũ** khó; **tạo draft mới** có thể vẫn được, cần thử.
+   - Không dùng dịch vụ giải mã bên ngoài (phải tải project lên server lạ).
+   - Không bao giờ ghi vào project gốc của Yan.
 4. Kiểm tra computer use trong app Claude Desktop (Settings → System/Capabilities → Computer use). Thử đặt 3–5 nhãn text + 2–3 SFX trên project mẫu, đo tốc độ và độ chính xác.
 5. Lập chỉ mục kho source cho mã làm thử đầu tiên (Yan chọn mã).
 6. Dựng thử 1 video hoàn chỉnh: voice thô + kịch bản → đầu ra như trên.
