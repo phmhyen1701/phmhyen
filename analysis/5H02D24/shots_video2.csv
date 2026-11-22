@@ -1,0 +1,23 @@
+stt,bat_dau,ket_thuc,do_dai,phan,cau_voice,canh_source,nhom_source,overlay_tinh_nang
+1,0.0,2.7,2.7,Hook,"Đúng là làm mẹ tập một cái gì cũng bỡ ngỡ, nấu có 2 thìa ăn dặm","Thìa vàng múc cháo từ bát hồng (cùng source cảnh 4 video 1)",PAIN_IT_DO_AN,
+2,2.7,4.9,2.2,Hook,"mà bỏ vào máy xay xong dính sạch lên cối","Thìa cạo thành cối to (cùng source cảnh 5 video 1)",PAIN_DINH_COI,
+3,4.9,6.7,1.8,Nỗi đau,"Giai đoạn đầu mới tập ăn, bé chỉ ăn","KOL cầm thìa hồng + cối to, trung cảnh",PAIN_IT_DO_AN,
+4,6.7,8.5,1.8,Nỗi đau,"vỏn vẹn đúng 1 hai thìa cháo hay miếng rau củ","Cận thìa hồng cho chút đồ vào cối to",PAIN_IT_DO_AN,
+5,8.5,10.9,2.4,Nỗi đau,"Dùng cối xay gia đình to đùng thì thực phẩm văng khắp nơi","Cận cối to đang xay, đồ văng + nét động",PAIN_COI_TO,
+6,10.9,13.4,2.5,Nỗi đau,"lưỡi dao không quét tới nên phải nấu nhiều rồi bỏ đi, cực kỳ lãng phí","Lưỡi dao cối to + vòng tròn đỏ chỗ không quét tới",PAIN_COI_TO,"Vòng tròn đỏ"
+7,13.4,13.7,0.3,Chuyển,"","Thẻ ❌ nền sáng (chuyển cảnh)",TRANSITION,"❌"
+8,13.7,16.5,2.8,Giới thiệu SP,"Nhưng với em Bear 5H02D24 này thì khác hẳn nha","KOL cầm/đặt máy, trung cảnh",HERO,"Tên SP"
+9,16.5,18.7,2.2,Tính năng,"lòng cối nhỏ gọn, vừa vặn một bữa ăn cho bé","2 tay cầm cối nhìn từ trên (cùng source cảnh 7 video 1)",F_DUNGTICH,"Dung tích cối phù hợp 1 bữa ăn cho bé (chữ cong)"
+10,18.7,20.0,1.3,Tính năng,"kết hợp với lưỡi dao sát đáy","Cối rỗng + mũi tên đỏ (cùng source cảnh 8 video 1)",F_SATDAY,"Lưỡi dao sát đáy + mũi tên đỏ"
+11,20.0,21.7,1.7,Tính năng,"nên mẹ chỉ cần cho đúng 2 thìa đồ ăn","Đổ đồ ăn từ nồi nhỏ vào cối",F_SATDAY_DEMO,
+12,21.7,23.4,1.7,Tính năng,"dao vẫn chạm tới và cuộn sạch từ dưới lên","Đậy nắp + lắp thân máy",F_SATDAY_DEMO,
+13,23.4,28.3,4.9,Tính năng,"Máy chạy cực khoẻ, nhấn đúng 8 giây là thức ăn đã nhuyễn mịn như kem, chưa kịp văng lên thành cối là xong rồi","Tay ấn máy + điện thoại bấm giờ (bản quay khác: xay cháo)",F_8GIAY,"⏰ Xay mịn chỉ 8s"
+14,28.3,30.9,2.6,Tính năng,"Phần nắp đậy có gioăng kín nên xay không hề bị bắn hay trào ra ngoài","Tay cầm nắp lộ gioăng (cùng source cảnh 16 video 1)",F_GIOANG,"Gioăng cao su ở nắp đậy"
+15,30.9,32.9,2.0,Tính năng,"mẹ cũng yên tâm xay đồ nóng còn nóng hổi","Tay ấn máy nền studio (cùng source cảnh 17 video 1)",F_NONG,
+16,32.9,34.8,1.9,Tính năng,"vì cối làm bằng thuỷ tinh dày dặn chịu nhiệt tốt","2 tay cầm cối thuỷ tinh rỗng (source khác video 1)",F_THUYTINH,"✅ Thuỷ tinh chịu nhiệt"
+17,34.8,37.5,2.7,Tính năng,"lưỡi dao làm bằng inox chuẩn y tế nên không lo gỉ sét hay ám mùi","2 tay cầm cụm lưỡi dao (source khác video 1)",F_INOX,"✅ Thuỷ tinh chịu nhiệt + ✅ Lưỡi dao inox"
+18,37.5,39.5,2.0,Tính năng,"Vì thức ăn gom hết ở đáy chứ không văng lên nắp","Nhấc lưỡi dao khỏi cối cháo đã xay (chuyển cảnh trượt)",F_VESINH,
+19,39.5,42.2,2.7,Tính năng,"nên ăn xong mẹ chỉ cần tháo rời cối, nắp và lưỡi dao","Đổ cháo từ cối ra bát",F_VESINH,
+20,42.2,45.7,3.5,Tính năng,"xối nhẹ dưới vòi nước là sạch bong, không phải hì hục cậy rửa từng kẽ nữa","Rửa cối, lưỡi dao dưới vòi nước",F_VESINH,"Vệ sinh siêu nhanh (chữ cong)"
+21,45.7,48.2,2.5,CTA,"Mẹ nào sắp cho con bước vào giai đoạn ăn dặm thì chốt liền tay Bear","Beauty shot máy, nền studio, chuyển cảnh loé sáng",CTA_MAY,"Tên SP"
+22,48.2,52.5,4.3,CTA,"5H02D24 này ở giỏ hàng nha. Voucher giảm sâu chỉ áp dụng trong tháng 11 này thôi á","Máy + bát cháo hồng, nền studio",CTA_MAY_BAT,"Tên SP; mũi tên đỏ chỉ xuống trái"
