@@ -38,8 +38,22 @@ Hook KOL/vlog/inbox là **quay riêng từng video** (Yan đưa file). Hook B-ro
 
 Một video có thể kết hợp nhiều dạng.
 
-### Khối CTA cố định
-Một số mã có **khối CTA giống hệt nhau** giữa các video (cùng cảnh, cùng thứ tự, cùng sticker deal), ví dụ 045KN. Với các mã này thì **dùng lại nguyên khối** và chỉ co giãn độ dài từng cảnh theo voice. Khối được ghi trong file SP.
+### CTA
+- **Chọn lại source mỗi video**, vì chương trình khuyến mãi mỗi lần một khác.
+- Cảnh: SP đứng riêng / SP + thành phẩm / tay đặt SP hoặc bát / cảnh mẹ con. Mỗi ý khuyến mãi một cảnh.
+- **Sticker bám theo từng ý khuyến mãi trong voice:**
+
+| Voice nói | Sticker |
+|---|---|
+| giảm X% | -X% |
+| voucher X | Voucher X |
+| freeship, giao hoả tốc | Free shipping |
+| bảo hành X tháng | Bảo hành X tháng |
+| tặng kèm | 🎁 Tặng kèm… |
+| mua tại fanpage | Deal hời tại fanpage |
+| giỏ hàng, góc trái, chốt | Chốt đơn tại đây + mũi tên ↙ |
+
+Voice không nhắc ý nào thì không dùng sticker đó.
 
 ## 2. Quy tắc cắt
 
@@ -52,6 +66,13 @@ Một số mã có **khối CTA giống hệt nhau** giữa các video (cùng c�
 
 ## 3. Nguyên tắc chọn source
 
+### Thứ tự ưu tiên
+1. **Cột "Mô tả cảnh" trong kịch bản** là khung chính: theo đúng thứ tự và ý của cột này. "Trám" = cảnh chèn (B-roll), "VJ" = người dẫn xuất hiện trong khung hình.
+2. **Từ khoá cụ thể trong voice** thắng mô tả cảnh chung chung. Ví dụ kịch bản ghi "Trám bảng điều khiển" nhưng voice nói "nấc độ thô 8–10 tháng, trên 11 tháng" thì dùng cảnh 3 bát cháo 3 độ thô.
+3. **Cảnh kịch bản yêu cầu mà kho không có** thì thay bằng cảnh minh hoạ từ khoá voice, và đánh dấu `can_xem`.
+4. **Voice thu thực tế có thể lược bớt** so với kịch bản. Luôn căn theo voice thật.
+
+### Khớp hình với voice
 - **Hình phải minh hoạ đúng nghĩa đen từ khoá trong câu voice.** Ví dụ voice nói số liệu (dung tích, thời gian) thì hình phải cho thấy số liệu đó: cầm cối, đồng hồ bấm giờ…
 - Mỗi câu voice → tìm từ khoá → tra bảng "từ khoá → nhóm" trong file SP → chọn một source trong nhóm.
 - **Câu nói về cảm xúc/lợi ích** (giấc ngủ của mẹ, con ăn ngon, nhàn hơn) → dùng cảnh **LIFESTYLE**: em bé ăn, mẹ bế con, mẹ thức đêm.
@@ -69,7 +90,10 @@ Một số mã có **khối CTA giống hệt nhau** giữa các video (cùng c�
 
 ## 5. Phụ đề
 
-- **Không phải mã nào cũng có phụ đề.** 5H02D24 và 5H12V78 có, 045KN thì không (chỉ có pill tiêu đề). File SP ghi rõ.
+- **Có phụ đề hay không tuỳ từng video, không tuỳ mã:**
+  - Video **nhiều text overlay** (nhãn tính năng, pill câu hỏi, sticker): **không có phụ đề**.
+  - Video **thuần storytelling** (kể chuyện, ít nhãn): **có phụ đề**.
+  - Mình luôn xuất `.srt`, Yan quyết định có import hay không.
 - Kiểu karaoke, 2–4 từ/dòng, đặt giữa phía dưới. Chữ trắng viền, một từ khoá to hơn, màu xanh lá/vàng.
 - Xuất `.srt`: **chữ lấy từ kịch bản**, **thời gian lấy từ whisper** (`tools/make_srt.py`). Ngắt dòng ở dấu câu, tối đa 4 từ hoặc 1.6s.
 - Yan import vào CapCut (Captions → Import) rồi áp style/animation hàng loạt. *Đang chờ Yan thử xem highlight theo từng từ có chạy với file .srt không.*
@@ -91,6 +115,6 @@ Một số mã có **khối CTA giống hệt nhau** giữa các video (cùng c�
 | Đầu vào | Bắt buộc | Dùng để |
 |---|---|---|
 | 1–2 video final | Nên có | Soạn `rules/sp/<mã>.md` đúng gu chọn cảnh |
-| Kịch bản | Có | Biết danh sách tính năng, từ khoá |
+| Kịch bản (3 cột: Phần, Mô tả cảnh, Voice) | Có | Khung chọn cảnh + danh sách tính năng, từ khoá. Gửi dạng ảnh được; xuất Excel/CSV từ Lark Sheets thì chạy tự động tốt hơn |
 | Folder source | Có | Lập chỉ mục một lần |
 | Ghi chú đặc biệt | Không | Ngoại lệ so với quy tắc chung |

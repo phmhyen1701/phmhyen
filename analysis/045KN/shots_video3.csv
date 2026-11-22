@@ -9,27 +9,27 @@ stt,bat_dau,ket_thuc,do_dai,phan,cau_voice,canh_source,nhom_source,overlay_tinh_
 8,10.0,11.9,1.9,Nỗi đau,con ăn được vài thìa thì em cũng rã rời,KOL rửa thớt ở bồn,PAIN_BAT_DUA,
 9,11.9,14.4,2.5,Giới thiệu SP,Nhưng từ ngày rinh em máy xay nấu ăn dặm 045KN này về,KOL áo hồng tạp dề kẻ đặt máy lên bàn,HERO,Tên SP: Máy xay nấu ăn dặm / BFM-045KN; khung focus 4 góc
 10,14.4,16.0,1.6,Giới thiệu SP,mọi thứ nhàn tênh hẳn các mẹ ạ,"Máy đứng riêng, zoom",HERO,Tên SP
-11,16.0,17.4,1.4,Quy trình,"Nấu ăn dặm bây giờ gọn đúng 3 bước, chỉ cần cắt nhỏ nguyên liệu","Top-down dao cắt dưa trên thớt, có củ dền",STEP_CHUAN_BI,Chuyển cảnh trượt
-12,17.4,20.3,2.9,Quy trình,(whisper bỏ sót — cần kịch bản),"Top-down cho gạo, nước, rau, thịt vào cối",STEP_CHO_VAO_COI,Pill bậc thang: Chuẩn bị nguyên liệu → Cho vào cối – chọn chế độ (mũi tên cong)
-13,20.3,21.9,1.6,Quy trình,(whisper bỏ sót),Ngón tay bấm bảng điều khiển,STEP_CHON_CHE_DO,+ Máy tự động nấu – xay
-14,21.9,25.0,3.1,Quy trình,(whisper bỏ sót),"Mở nắp, cháo đỏ đã xay, thìa khuấy",STEP_KET_QUA,Lấp lánh
-15,25.0,26.7,1.7,Quy trình,(whisper bỏ sót),Đổ cháo ra bát hồng,STEP_KET_QUA,
-16,26.7,29.5,2.8,Quy trình,(whisper bỏ sót) … mịn,Thìa khuấy bát cháo,RESULT_BAT,Lấp lánh
-17,29.5,33.9,4.4,Lợi ích,"thứ mà mình tự xay bằng tay hay máy xay thường khó mà làm được, con ăn thun thút mà mẹ chẳng tốn sức",Em bé ăn cháo (UGC),LIFESTYLE_BE_AN,
-18,33.9,35.4,1.5,Tính năng,"Chưa hết, máy còn chia sẵn các mức độ thông minh",Đổ cháo vàng mịn vào ramekin đỏ,F_DO_THO,4–7 tháng: nhuyễn mịn
-19,35.4,37.0,1.6,Tính năng,theo từng tháng tuổi của con,Đổ cháo lợn cợn vào ramekin cam,F_DO_THO,8–10 tháng: lợn cợn
-20,37.0,39.0,2.0,Tính năng,nên dùng xuyên suốt cả hành trình ăn dặm mà không lo phí,Múc cháo thô từ cối ra ramekin vàng,F_DO_THO,11+ tháng: ăn thô
+11,16.0,17.4,1.4,Quy trình,Nấu ăn dặm bây giờ gói gọn đúng 3 bước:,"Top-down dao cắt dưa trên thớt, có củ dền",STEP_CHUAN_BI,Chuyển cảnh trượt
+12,17.4,20.3,2.9,Quy trình,"chỉ cần cắt nhỏ nguyên liệu, cho hết vào trong cối…","Top-down cho gạo, nước, rau, thịt vào cối",STEP_CHO_VAO_COI,Pill bậc thang: Chuẩn bị nguyên liệu → Cho vào cối – chọn chế độ (mũi tên cong)
+13,20.3,21.9,1.6,Quy trình,"rồi bấm nút! Máy sẽ tự nấu chín trước,",Ngón tay bấm bảng điều khiển,STEP_CHON_CHE_DO,+ Máy tự động nấu – xay
+14,21.9,25.0,3.1,Quy trình,"rồi xay mịn luôn trong cùng một cối. Không phải đứng canh, không phải đổ qua đổ lại,","Mở nắp, cháo đỏ đã xay, thìa khuấy",STEP_KET_QUA,Lấp lánh
+15,25.0,26.7,1.7,Quy trình,dọn rửa cũng chỉ đúng một chiếc cối này thôi!,Đổ cháo ra bát hồng,STEP_KET_QUA,
+16,26.7,29.5,2.8,Quy trình,Mà các mẹ nhìn độ mịn này đi: nhuyễn tơi không một hạt lợn cợn,Thìa khuấy bát cháo,RESULT_BAT,Lấp lánh
+17,29.5,33.9,4.4,Lợi ích,"cho bé 4–7 tháng, thứ mà mình tự rây tay hay xay thường khó mà làm mượt được như vậy. Con ăn thun thút mà mẹ chẳng tốn sức.",Em bé ăn cháo (UGC),LIFESTYLE_BE_AN,
+18,33.9,35.4,1.5,Tính năng,"Chưa hết, máy còn chia sẵn các nấc độ thô",Đổ cháo vàng mịn vào ramekin đỏ,F_DO_THO,4–7 tháng: nhuyễn mịn
+19,35.4,37.0,1.6,Tính năng,"theo từng giai đoạn 8–10 tháng và trên 11 tháng,",Đổ cháo lợn cợn vào ramekin cam,F_DO_THO,8–10 tháng: lợn cợn
+20,37.0,39.0,2.0,Tính năng,nên dùng xuyên suốt cả hành trình ăn dặm của con không lo phí.,Múc cháo thô từ cối ra ramekin vàng,F_DO_THO,11+ tháng: ăn thô
 21,39.0,40.4,1.4,Tính năng,Toàn bộ phần tiếp xúc với thực phẩm là,Đặt cối inox vào máy,F_INOX,Vật liệu tiếp xúc thực phẩm
 22,40.4,42.4,2.0,Tính năng,inox 316 chuẩn y tế,Lắp lưỡi dao vào cối,F_INOX,+ Inox 316 chuẩn y tế
 23,42.4,44.4,2.0,Tính năng,"bền bỉ, an toàn tuyệt đối",Lắp nắp trong inox,F_INOX,
 24,44.4,46.0,1.6,Tính năng,không sợ gỉ sét hay thôi vi nhựa như các dòng cối nhựa thông thường,Đậy thân máy,F_INOX,
-25,46.0,48.3,2.3,Tính năng,Khoản em ưng nhất là ăn xong chỉ cần bật chế độ tự vệ sinh,"Bấm nút, màn hình đếm",F_TU_VE_SINH,Tự động vệ sinh
-26,48.3,50.3,2.0,Tính năng,máy tự rửa sạch bong,Đổ nước rửa từ cối ra bồn,F_TU_VE_SINH,
-27,50.3,52.0,1.7,Tính năng,(whisper bỏ sót),KOL tạp dề kỳ lân hồng cầm muỗng khuấy & cọ cạnh máy,TANG_KEM,
-28,52.0,57.0,5.0,Tính năng,"(whisper bỏ sót — 1 máy thay thế nồi nấu chậm, máy xay, máy sinh tố)","Top-down gắp bí đỏ, rau, súp lơ vào cối, đổ nước, đậy nắp",F_DA_NANG,Chữ chạy: 1 máy thay thế…; pill: Nồi nấu chậm | Máy xay | Máy sinh tố
-29,57.0,59.4,2.4,Tính năng,(whisper bỏ sót),Rót nước canh ra 2 hộp thuỷ tinh,F_DA_NANG,
-30,59.4,62.4,3.0,CTA,Bật mí với các mẹ là tại fanpage hôm nay máy đang giảm tới 50%,Tay đặt máy trên kệ; máy cận,CTA_BLOCK,Deal hời tại fanpage; -50%
-31,62.4,64.6,2.2,CTA,tặng thêm voucher 150k,Máy trên kệ hũ thuỷ tinh,CTA_BLOCK,Sticker Voucher 150K
-32,64.6,65.4,0.8,CTA,miễn phí giao hàng hoả tốc,Đổ cháo cà chua ra bát,CTA_BLOCK,Sticker Free shipping
-33,65.4,67.2,1.8,CTA,và bảo hành chính hãng tới 18 tháng luôn,Tay đặt bát cạnh máy,CTA_BLOCK,Sticker Bảo hành 18 tháng
-34,67.2,69.1,1.9,CTA,Tranh thủ đang có deal hời các mẹ nhanh tay nha,Máy + bát cháo trên kệ,CTA_BLOCK,
+25,46.0,48.3,2.3,Tính năng,"Khoản em ưng nhất là ăn xong chỉ cần bật chế độ vệ sinh tự động,","Bấm nút, màn hình đếm",F_TU_VE_SINH,Tự động vệ sinh
+26,48.3,50.3,2.0,Tính năng,máy tự súc rửa sạch bong,Đổ nước rửa từ cối ra bồn,F_TU_VE_SINH,
+27,50.3,52.0,1.7,Tính năng,kể cả khi vừa xay thịt hay đồ tanh. Dọn dẹp nhẹ tênh!,KOL tạp dề kỳ lân hồng cầm muỗng khuấy & cọ cạnh máy,F_TU_VE_SINH,
+28,52.0,57.0,5.0,Tính năng,"Tính ra đầu tư một chiếc máy này mà thay thế được cả nồi nấu chậm, máy xay ăn dặm lẫn máy làm sinh tố, bữa phụ cho con.","Top-down gắp bí đỏ, rau, súp lơ vào cối, đổ nước, đậy nắp",F_DA_NANG,Chữ chạy: 1 máy thay thế…; pill: Nồi nấu chậm | Máy xay | Máy sinh tố
+29,57.0,59.4,2.4,Tính năng,Tiết kiệm hẳn mấy tiếng đồng hồ so với cách nấu lỉnh kỉnh trước đây.,Rót nước canh ra 2 hộp thuỷ tinh,F_DA_NANG,
+30,59.4,62.4,3.0,CTA,Bật mí với các mẹ là tại fanpage hôm nay máy đang giảm tới 50%,Tay đặt máy trên kệ; máy cận,CTA,Deal hời tại fanpage; -50%
+31,62.4,64.6,2.2,CTA,tặng thêm voucher 150k,Máy trên kệ hũ thuỷ tinh,CTA,Sticker Voucher 150K
+32,64.6,65.4,0.8,CTA,miễn phí giao hàng hoả tốc,Đổ cháo cà chua ra bát,CTA,Sticker Free shipping
+33,65.4,67.2,1.8,CTA,và bảo hành chính hãng tới 18 tháng luôn,Tay đặt bát cạnh máy,CTA,Sticker Bảo hành 18 tháng
+34,67.2,69.1,1.9,CTA,Tranh thủ đang có deal hời các mẹ nhanh tay nha,Máy + bát cháo trên kệ,CTA,
