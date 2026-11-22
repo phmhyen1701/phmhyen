@@ -1,7 +1,7 @@
 # Kịch bản video 3 (045KN): so với bản Yan dựng thực tế
 
 > Kịch bản gốc Yan gửi dạng ảnh (Lark Sheets), 3 cột: Phần | Mô tả cảnh | Voice.
-> "Trám" = cảnh chèn (B-roll), "VJ" = người dẫn xuất hiện trong khung hình *(đang chờ Yan xác nhận)*.
+> "Trám" = cảnh chèn (B-roll), "VJ" = người dẫn xuất hiện trong khung hình.
 
 | Phần | Mô tả cảnh (kịch bản) | Voice (kịch bản) | Thực tế trong video final | Theo kịch bản? |
 |---|---|---|---|---|
