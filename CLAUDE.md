@@ -31,7 +31,7 @@ Y:\0. TÀI NGUYÊN MEDIA\Source Yến\Ads x Claude\   ← repo này, mở Claude
 |---|---|
 | `rules/chung.md` | Quy tắc chung mọi mã: khung video, kiểu hook, dạng thân, cắt cảnh, ưu tiên chọn source, CTA, phụ đề, overlay |
 | `rules/sp/<mã>.md` | Quy tắc riêng từng mã: từ khoá voice → nhóm source, nhãn overlay. Đã có: `5H02D24`, `045KN`, `5H12V78` |
-| `rules/brand/` | *(chưa có)* Quy tắc text theo 2 nhãn **Bear** và **Bear mẹ bé**. Chờ Yan gửi guideline, font, màu, template |
+| `rules/brand/` | Quy tắc text theo 2 nhãn: `chung.md` (font chung, so sánh, chọn nhãn theo mã), `bear.md` (Bear Official), `bear-me-be.md` (Bear mẹ bé). Nguồn ảnh/font gốc ở `Brand guildeline/` |
 | `analysis/<mã>/` | Bảng phân cảnh video mẫu (`shots_video*.csv`), kết quả whisper, kịch bản đối chiếu |
 | `tools/make_srt.py` | Tạo .srt: chữ lấy từ kịch bản, thời gian lấy từ whisper (so khớp mềm) |
 | `tools/shot_table.py` | Tạo bảng phân cảnh nháp cho video mẫu (mốc cắt cảnh + lời voice) |
@@ -65,7 +65,7 @@ output\<tên video>\
 
 ## Việc đang chờ (theo thứ tự)
 1. ~~Yan cài đặt theo `docs/huong-dan-cai-dat-windows.md`~~ Đã cài xong 23/11/2026 (git, Python 3.12, ffmpeg 9.1, faster-whisper 1.2.1), repo chuyển sang folder Y: ở trên. Còn: kiểm tra Claude đọc được bối cảnh khi mở phiên mới.
-2. Yan gửi thông tin brand (guideline, mã màu, font, ảnh cài đặt template CapCut, quy ước tên preset) → viết `rules/brand/bear.md`, `rules/brand/bear-me-be.md`.
+2. ~~Yan gửi thông tin brand~~ Đã viết `rules/brand/` 23/11/2026. Còn thiếu: nhãn của 045KN và 5H12V78, quy ước tên preset.
 3. Thử **tạo draft CapCut mới** bằng thư viện cộng đồng (VectCutAPI/CapCutAPI có kèm MCP server, hoặc pyCapCut / pyJianYingDraft): tạo draft nhỏ gồm 3 clip + voice + 1 text → chép vào thư mục draft của CapCut → mở bằng bản CapCut của Yan xem có chạy không. Lưu ý:
    - Đây là công cụ không chính thức, CapCut cập nhật có thể làm hỏng. Đọc code trước khi cài.
    - Bản mới mã hoá `draft_content.json`, nên **đọc/sửa project cũ** khó; **tạo draft mới** có thể vẫn được, cần thử.
