@@ -1,0 +1,192 @@
+﻿file,in,out,nhom,mo_ta,goc_may,mon,chat_luong
+C5766.MP4,0.0,11.0,PAIN_RUA_BAT,Tay rửa bát hoa đỏ ở bồn chất đống bát nồi,top-down,,ok
+C5767.MP4,0.0,6.0,PAIN_RUA_BAT,Bồn rửa chất đống bát; tay cọ bát hồng và rổ,top-down,,ok
+C5768.MP4,0.0,9.0,PAIN_RUA_BAT,Mẹ áo vàng đứng rửa bát ở bồn đầy bát đĩa,trung,,ok
+C5769.MP4,0.0,7.0,HERO,Máy đứng riêng nền studio (hộp BUTTER + hoa đỏ); máy quay đứng yên,trung,,ok
+C5770.MP4,0.0,7.5,HERO,Máy đứng riêng nền studio; máy quay nâng lên và tiến lại gần,trung>cận,,ok
+C5771.MP4,0.0,3.0,F_THUYTINH,Cận cối thuỷ tinh rỗng thấy lưỡi dao; nền studio,cận,,ok
+C5771.MP4,3.0,8.5,HERO,Máy quay nâng từ cối lên thấy cả máy; nền studio,cận,,ok
+C5772.MP4,0.0,8.0,HERO,Máy đứng riêng nền studio; đứng yên,trung,,ok
+C5773.MP4,0.0,7.0,HERO,Máy nền studio; máy quay trượt ngang sang phải,trung,,ok
+C5774.MP4,1.5,3.5,HERO,Tay đặt máy vào giữa khung hình nền studio,trung,,ok
+C5774.MP4,3.5,10.0,HERO,Máy đứng riêng nền studio; đứng yên (góc xa hơn),trung,,ok
+C5775.MP4,1.0,6.5,F_VESINH,Tay nhấc thân máy và nắp ra khỏi cối (tháo rời),trung,,ok
+C5775.MP4,7.0,12.5,F_INOX|F_VESINH,Tay nhấc cụm lưỡi dao ra khỏi cối thuỷ tinh rồi đặt xuống,trung,,ok
+C5776.MP4,0.0,7.5,F_VESINH,Các bộ phận tháo rời nằm trên bàn (cối + lưỡi dao + nắp + thân); máy quay trượt,cận,,ok
+C5777.MP4,3.0,8.5,F_VESINH,Các bộ phận tháo rời trên bàn; máy quay hạ xuống (0-3s đang di chuyển),trung,,ok
+C5778.MP4,1.5,5.5,HERO,Tay đặt khay nguyên liệu (cải + thịt + củ dền) cạnh máy,trung,rau thịt,ok
+C5779.MP4,0.0,7.5,HERO,Máy + khay nguyên liệu (cải + thịt + củ dền); máy quay trượt,trung,rau thịt,ok
+C5780.MP4,3.0,6.5,HERO,Máy + khay rau cải; máy quay nâng lên (0-3s đang di chuyển),cận,rau,ok
+C5781.MP4,0.0,5.0,HERO,Cận máy đã lắp đứng yên; khay rau phía sau,cận,,ok
+C5781.MP4,5.5,10.5,F_SATDAY_DEMO|F_VESINH,Tay nhấc thân máy và nắp ra; lộ cối rỗng có lưỡi dao,cận,,ok
+C5781.MP4,11.0,31.0,F_SATDAY_DEMO,Kẹp gắp cải xanh cho vào cối thuỷ tinh,cận,rau,ok
+C5781.MP4,31.5,37.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối có rau,cận,rau,ok
+C5782.MP4,0.0,3.5,F_NHANXAY,Tay ấn máy đang xay rau; nền studio,cận,rau,ok
+C5783.MP4,0.0,6.5,F_NHANXAY,Tay ấn máy đang xay rau; nền studio hộp BUTTER,trung,rau,ok
+C5784.MP4,0.0,8.0,F_NHANXAY,Cận tay ấn máy xay rau; máy quay hạ dần xuống cối,cận,rau,ok
+C5785.MP4,0.0,9.0,F_8GIAY|F_SATDAY_DEMO,Đặc tả cối đang xay; rau nhuyễn dần; lưỡi dao quét sát đáy,cận,rau,ok
+C5786.MP4,1.5,5.0,F_VESINH,Tay tháo thân máy và nắp khỏi cối rau đã xay,trung,rau,ok
+C5786.MP4,5.0,9.5,F_NONG,Tay nhấc cối rau đã xay lên; bát cháo hồng bên cạnh,trung,rau,ok
+C5787.MP4,0.0,7.0,F_NONG,Tay cầm cối rau đã xay xoay nhẹ; thấy rau nhuyễn và lưỡi dao,cận,rau,ok
+C5787.MP4,7.5,12.5,F_VESINH|F_INOX,Nhấc lưỡi dao ra khỏi cối rau đã xay,cận,rau,ok
+C5788.MP4,2.0,22.0,RESULT_BAT,Thìa silicon hồng múc rau xay cho vào bát cháo hồng hình gấu,cận,rau cháo,ok
+C5789.MP4,1.5,4.0,F_SATDAY_DEMO,Tay mở nắp; xoay cối thuỷ tinh rỗng,trung,,ok
+C5789.MP4,5.0,15.5,F_SATDAY_DEMO,Kẹp gắp từng miếng thịt cho vào cối,trung,thịt,ok
+C5790.MP4,0.0,7.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối có thịt,trung,thịt,ok
+C5791.MP4,0.0,11.5,F_NHANXAY,Tay ấn máy đang xay thịt; nền studio,trung,thịt,ok
+C5792.MP4,0.0,8.5,F_NONG|F_NHANXAY,Đặc tả cối thịt đã xay; máy quay nâng lên thấy tay ấn máy,cận,thịt,ok
+C5793.MP4,1.5,5.5,F_NONG,Đặc tả cối thịt đã xay nhuyễn; máy quay lia ngang,cận,thịt,0-1.5s mất nét
+C5794.MP4,2.0,6.0,F_VESINH|F_INOX,Tháo thân máy và nắp; nhấc lưỡi dao khỏi cối thịt đã xay,trung,thịt,ok
+C5795.MP4,2.0,15.0,F_THUYTINH|F_NONG,Tay cầm cối thuỷ tinh; thìa hồng vét thịt xay,cận,thịt,ok
+C5796.MP4,2.0,26.0,RESULT_BAT,Thìa hồng múc thịt xay cho vào bát cháo rau hình gấu,cận,thịt rau cháo,ok
+C5797.MP4,1.5,4.0,CTA_MAY_BAT,Tay đặt bát cháo rau thịt cạnh máy; nền studio,trung,thịt rau cháo,ok
+C5797.MP4,4.0,12.0,CTA_MAY_BAT,Máy + bát cháo rau thịt có thìa; đứng yên,trung,thịt rau cháo,ok
+C5798.MP4,2.0,7.5,CTA_MAY_BAT,Máy quay trượt từ máy sang máy + bát cháo rau thịt,trung,thịt rau cháo,ok
+C5799.MP4,0.0,7.0,CTA_MAY_BAT,Máy + bát cháo rau thịt có thìa; góc gần; đứng yên,trung,thịt rau cháo,ok
+C5800.MP4,0.0,31.0,RESULT_BAT,Thìa khuấy trộn cháo rau thịt trong bát hồng hình gấu,cận,thịt rau cháo,ok
+C5800.MP4,37.0,53.0,RESULT_BAT,Thìa múc cháo rau thịt đã trộn lên khỏi bát,cận,thịt rau cháo,ok
+C5801.MP4,1.5,7.0,F_VESINH,Tháo thân máy và nắp; nhấc cối thuỷ tinh rỗng ra,trung,,ok
+C5802.MP4,1.5,6.0,F_VESINH,Tháo thân máy và nắp lộ cối rỗng có lưỡi dao,trung,,ok
+C5802.MP4,13.0,38.0,F_SATDAY_DEMO|F_NONG,Muôi múc cháo trắng cho vào cối (nhiều lần),trung,cháo,ok
+C5802.MP4,44.0,49.0,F_SATDAY_DEMO,Kẹp gắp củ dền cho vào cối cháo,trung,cháo dền,ok
+C5802.MP4,49.5,56.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối cháo,trung,cháo dền,ok
+C5802.MP4,56.0,65.0,F_NHANXAY,Tay ấn máy xay cháo dền; cối chuyển màu hồng,trung,cháo dền,ok
+C5803.MP4,1.0,8.0,F_NHANXAY,Tay ấn máy xay cháo dền hồng; máy quay nâng lên,cận,cháo dền,ok
+C5804.MP4,1.0,8.0,F_NHANXAY,Cận tay ấn máy; cối cháo dền hồng,cận,cháo dền,ok
+C5805.MP4,1.5,7.0,F_VESINH,Tháo thân máy và nắp khỏi cối cháo dền đã xay,trung,cháo dền,ok
+C5805.MP4,7.5,13.0,F_NONG|F_THUYTINH,Tay xoay cối thuỷ tinh cháo dền hồng đã xay,trung,cháo dền,ok
+C5805.MP4,13.5,17.5,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối cháo dền,trung,cháo dền,ok
+C5805.MP4,17.5,20.0,F_THUYTINH,Cối thuỷ tinh cháo dền hồng đứng yên,trung,cháo dền,ok
+C5806.MP4,0.0,7.5,F_VESINH|RESULT_BAT,Tay rót cháo dền từ cối ra bát hồng hình gấu,trung,cháo dền,ok
+C5807.MP4,1.5,4.0,CTA_MAY_BAT,Tay đặt bát cháo dền cạnh máy; nền studio,trung,cháo dền,ok
+C5807.MP4,4.0,10.5,CTA_MAY_BAT,Máy + bát cháo dền; tay đặt thìa vào bát,trung,cháo dền,ok
+C5808.MP4,0.0,9.0,CTA_MAY_BAT,Máy + bát cháo dền có thìa; máy quay trượt,cận,cháo dền,ok
+C5809.MP4,0.0,5.5,CTA_MAY_BAT,Máy quay nâng từ bát cháo dền lên máy,cận,cháo dền,ok
+C5810.MP4,0.0,13.0,RESULT_BAT,Thìa khuấy và múc cháo dền hồng trong bát,cận,cháo dền,ok
+C6213.MP4,0.0,20.5,PAIN_IT_DO_AN,Người áo trắng ren dùng thìa hồng gạt chút cháo từ bát vào cối máy xay to,trung,cháo,ok
+C6214.MP4,0.0,8.0,PAIN_IT_DO_AN,Cận thìa hồng cho chút cháo vào cối to (lưỡi dao to),cận,cháo,ok
+C6215.MP4,7.5,11.0,PAIN_COI_TO,Cối máy xay gia đình to đang xay ít đồ,cận,cháo,2-7.5s máy quay lia mất nét
+C6216.MP4,0.0,14.0,PAIN_COI_TO|PAIN_DINH_COI,Cối to đang xay ít đồ; đồ văng bám thành cối,cận,cháo,ok
+C6217.MP4,0.0,4.5,PAIN_COI_TO,Tay nhấc lưỡi dao to khỏi cối to,cận,cháo,ok
+C6217.MP4,4.5,8.5,PAIN_COI_TO,Đáy cối to còn ít cháo; lưỡi dao không quét tới,cận,cháo,ok
+C6218.MP4,2.0,27.0,PAIN_IT_DO_AN,Thìa vàng múc từng chút cháo từ cối to sang bát hồng (top-down nghiêng),top-down,cháo,ok
+C6219.MP4,0.0,12.0,PAIN_DINH_COI,Thìa vàng cạo thành cối thuỷ tinh to dính thức ăn,cận,cháo,ok
+C6220.MP4,0.0,5.0,HERO,Người áo trắng ren đặt máy lên bàn bếp,trung,,ok
+C6221.MP4,0.0,5.0,HERO,Máy đứng riêng trên bàn bếp (nền tủ bếp gỗ); máy quay trượt,cận,,ok
+C6222.MP4,0.0,5.0,HERO,Máy trên bàn bếp; máy quay lia ngang,cận,,cuối 5-6.5s máy ra khỏi khung
+C6223.MP4,0.0,10.0,HERO,Máy đứng riêng trên bàn bếp đá trắng; vòi nước phía sau; đứng yên,trung,,ok
+C6224.MP4,1.5,4.5,HERO,Máy quay nâng lên thấy máy trên bàn bếp,trung,,ok
+C6225.MP4,0.0,4.0,F_DUNGTICH,2 tay cầm cối nhìn từ trên thấy lưỡi dao,top-down,,ok
+C6225.MP4,5.5,8.5,F_THUYTINH,Cối thuỷ tinh rỗng đặt trên bàn; nắp bên cạnh,trung,,ok
+C6226.MP4,0.0,3.0,F_DUNGTICH,2 tay cầm cối nhìn từ trên thấy lưỡi dao,top-down,,ok
+C6227.MP4,0.0,7.0,F_INOX,2 tay cầm cụm lưỡi dao nhìn từ trên; ngón tay chỉ vào lưỡi,cận,,ok
+C6227.MP4,8.0,20.5,F_INOX,Tay xoay cụm lưỡi dao cho thấy các tầng lưỡi inox,cận,,ok
+C6228.MP4,0.0,15.5,F_THUYTINH|F_DUNGTICH,2 tay cầm cối thuỷ tinh rỗng xoay nghiêng,cận,,ok
+C6229.MP4,0.0,25.5,F_GIOANG,Tay cầm nắp lộ vòng gioăng cao su; cận sát,cận,,ok
+C6230.MP4,0.0,15.5,F_GIOANG,Tay cầm nắp lộ gioăng; xoay nghiêng; nền bếp,cận,,ok
+C6231.MP4,0.0,8.5,HOOK_KOL,KOL áo trắng ren nói trước máy quay; máy + bát nguyên liệu trên bàn,trung,,ok
+C6232.MP4,0.0,10.0,HOOK_KOL,KOL áo trắng ren nói trước máy quay; tay để trên máy,trung,,ok
+C6233.MP4,0.0,9.5,HOOK_KOL,KOL áo trắng ren nói và giơ tay biểu cảm,trung,,ok
+C6234.MP4,1.5,8.0,HERO,Tay đặt bát thịt cạnh máy trên bàn bếp,trung,thịt,ok
+C6234.MP4,9.5,19.0,HERO,Tay đặt bát cà rốt + khoai tây cạnh máy,trung,cà rốt khoai,ok
+C6234.MP4,21.5,27.5,HERO,Tay đặt bát cháo trắng cạnh máy,trung,cháo,ok
+C6235.MP4,1.5,4.5,F_VESINH,Tay nhấc thân máy ra khỏi cối,cận,,ok
+C6235.MP4,6.0,23.5,F_SATDAY,Cối thuỷ tinh có nắp đứng yên; thấy lưỡi dao sát đáy qua thành cối,cận,,ok
+C6235.MP4,24.0,28.0,F_SATDAY_DEMO,Tay mở nắp cối,cận,,ok
+C6235.MP4,28.0,31.5,F_SATDAY,Cối rỗng đã mở nắp; lưỡi dao sát đáy,cận,,ok
+C6235.MP4,31.5,35.5,F_SATDAY_DEMO,Thìa vàng cho thịt từ bát vào cối,cận,thịt,ok
+C6235.MP4,36.0,43.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối thịt,cận,thịt,ok
+C6235.MP4,43.5,50.0,F_SATDAY_DEMO,Tháo ra rồi lắp lại thân máy (thao tác lặp),cận,thịt,quay lặp
+C6236.MP4,2.0,14.5,F_8GIAY,Tay ấn máy xay thịt + điện thoại bấm giờ chạy 0→10s,trung,thịt,ok
+C6237.MP4,2.0,7.0,F_NONG|F_DUNGTICH,2 tay cầm cối thịt đã xay nhìn từ trên thấy lưỡi dao,top-down,thịt,ok
+C6237.MP4,7.5,11.0,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối thịt đã xay,cận,thịt,ok
+C6237.MP4,16.0,23.0,F_THUYTINH,Thìa vàng khuấy thịt xay trong cối thuỷ tinh,cận,thịt,ok
+C6237.MP4,24.0,32.0,F_8GIAY,Ngón tay bốc thử thịt xay cho thấy độ nhuyễn,cận,thịt,ok
+C6237.MP4,33.0,43.0,F_THUYTINH,Thìa vàng dựng trong cối thịt xay; đứng yên,cận,thịt,ok
+C6238.MP4,0.0,14.0,F_VESINH|RESULT_BAT,Thìa vàng múc thịt xay từ cối ra bát nhỏ,cận,thịt,ok
+C6238.MP4,14.0,29.5,RESULT_BAT,Bát nhỏ thịt xay đứng yên trên bàn,cận,thịt,ok
+C6239.MP4,1.5,12.5,F_SATDAY_DEMO,Thìa vàng cho khoai tây từ khay vào cối,cận,khoai,ok
+C6239.MP4,13.0,19.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối khoai,cận,khoai,ok
+C6240.MP4,2.0,11.5,F_8GIAY,Tay ấn máy xay khoai + điện thoại bấm giờ chạy 0→7s,trung,khoai,ok
+C6241.MP4,0.0,3.5,F_VESINH,Tháo thân máy và nắp khỏi cối khoai đã xay,trung,khoai,ok
+C6241.MP4,3.5,7.5,F_NONG|F_DUNGTICH,2 tay cầm cối khoai đã xay nhìn từ trên thấy lưỡi dao,top-down,khoai,ok
+C6241.MP4,11.0,28.5,F_8GIAY|F_THUYTINH,Thìa vàng múc khoai nghiền mịn trong cối; nâng thìa cho thấy độ mịn,trung,khoai,ok
+C6242.MP4,1.5,9.0,F_SATDAY_DEMO,Thìa vàng cho cà rốt vào cối rỗng,cận,cà rốt,ok
+C6242.MP4,10.0,16.5,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối cà rốt,cận,cà rốt,ok
+C6243.MP4,0.0,5.0,F_NHANXAY,Tay ấn máy xay cà rốt (chưa có đồng hồ),trung,cà rốt,ok
+C6243.MP4,5.5,17.5,F_8GIAY,Tay ấn máy xay cà rốt + điện thoại bấm giờ 0→5.7s,trung,cà rốt,ok
+C6243.MP4,19.0,31.0,F_8GIAY,Lần 2: ấn máy + bấm giờ 0→8.75s; cà rốt nhuyễn cam,trung,cà rốt,ok
+C6243.MP4,31.5,35.0,F_VESINH,Tháo thân máy và mở nắp lộ cà rốt đã xay,trung,cà rốt,ok
+C6244.MP4,0.0,2.5,F_VESINH,Tay mở nắp cối cà rốt đã xay,trung,cà rốt,ok
+C6244.MP4,3.5,7.5,F_NONG|F_DUNGTICH,2 tay cầm cối cà rốt đã xay nhìn từ trên thấy lưỡi dao,top-down,cà rốt,ok
+C6244.MP4,8.0,12.0,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối cà rốt đã xay,trung,cà rốt,ok
+C6244.MP4,15.5,41.0,F_8GIAY|F_THUYTINH,Thìa vàng khuấy rồi múc cà rốt nghiền mịn trong cối; nâng thìa cho thấy độ mịn,trung,cà rốt,ok
+C6245.MP4,0.0,15.0,F_VESINH|RESULT_BAT,Thìa vàng múc cà rốt xay từ cối ra khay cạnh khoai nghiền,trung,cà rốt khoai,ok
+C6246.MP4,2.0,13.5,F_SATDAY_DEMO|F_NONG,Rót cháo từ bát vào cối rỗng; thìa vàng gạt,trung,cháo,ok
+C6246.MP4,15.0,22.5,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy lên cối cháo,trung,cháo,ok
+C6247.MP4,4.0,14.0,F_8GIAY,Tay ấn máy xay cháo + điện thoại bấm giờ 0→7s,trung,cháo,ok
+C6247.MP4,16.0,19.0,F_VESINH,Tháo thân máy khỏi cối cháo đã xay,trung,cháo,ok
+C6248.MP4,0.0,1.5,F_VESINH,Tay mở nắp cối cháo đã xay,trung,cháo,ok
+C6248.MP4,2.0,5.5,F_NONG|F_DUNGTICH,2 tay cầm cối cháo đã xay nhìn từ trên,top-down,cháo,ok
+C6248.MP4,6.0,11.5,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối cháo đã xay,trung,cháo,ok
+C6248.MP4,12.0,17.5,F_THUYTINH,Tay xoay cối thuỷ tinh cháo trắng đã xay nhuyễn,trung,cháo,ok
+C6249.MP4,1.5,8.0,F_VESINH|RESULT_BAT,Rót cháo đã xay từ cối vào bát sứ,trung,cháo,ok
+C6250.MP4,0.0,8.5,RESULT_BAT,Thìa hồng khuấy cháo trắng trong bát sứ,trung,cháo,ok
+C8895.MP4,0.0,6.5,F_INOX,Tay cầm cụm lưỡi dao đặt vào cối; bếp kệ gỗ ánh vàng ấm,cận,,ok
+C8896.MP4,0.0,7.0,F_INOX,Tay cầm cụm lưỡi dao hạ vào cối rỗng; bếp kệ gỗ,cận,,ok
+C8897.MP4,0.0,5.5,F_DUNGTICH|F_SATDAY,Tay cầm cối nhìn từ trên; lắp lưỡi dao thấy các cánh xoè sát đáy,top-down,,ok
+C8898.MP4,0.0,7.5,F_THUYTINH,2 tay cầm cối thuỷ tinh rỗng ngang tầm mắt; bếp kệ gỗ,cận,,ok
+C8899.MP4,1.0,5.0,F_INOX|F_SATDAY_DEMO,Tay đặt lưỡi dao vào cối rỗng,trung,,ok
+C8900.MP4,0.0,9.5,F_THUYTINH|F_DUNGTICH,2 tay cầm cối rỗng nhìn từ trên (chưa có lưỡi dao),top-down,,ok
+C8900.MP4,10.0,23.5,F_THUYTINH,2 tay xoay cối thuỷ tinh rỗng ngang tầm mắt,cận,,ok
+C8972.MP4,1.5,25.0,F_SATDAY_DEMO,Thìa vàng cho thịt vào cối (nhiều lần); bếp kệ gỗ,trung,thịt,ok
+C8973.MP4,0.0,6.0,F_SATDAY_DEMO,Tay đậy nắp cối thịt,trung,thịt,ok
+C8974.MP4,0.0,6.0,F_SATDAY_DEMO,Tay mở nắp rồi đậy lại cối thịt,trung,thịt,ok
+C8975.MP4,0.0,4.0,F_SATDAY_DEMO,Lắp thân máy lên cối thịt,trung,thịt,ok
+C8976.MP4,0.0,7.5,F_NHANXAY,Tay ấn máy xay thịt; bếp nền kem,cận,thịt,ok
+C8977.MP4,0.0,2.0,F_VESINH,Tay mở nắp cối thịt đã xay,trung,thịt,ok
+C8977.MP4,8.0,13.0,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối thịt đã xay,trung,thịt,ok
+C8977.MP4,19.5,27.0,F_NONG|F_THUYTINH,2 tay cầm cối thịt đã xay nghiêng nhìn từ trên,cận,thịt,ok
+C8978.MP4,2.0,25.0,F_VESINH|RESULT_BAT,Thìa vét đồ đã xay từ cối ra bát gốm,top-down,cháo,ok
+C8979.MP4,0.0,10.5,RESULT_BAT,Tay cầm bát gốm; thìa khuấy và múc cháo,cận,cháo,ok
+IMG_2025121708361217.MOV,0.0,9.0,F_SATDAY_DEMO,Kẹp inox cho cơm từ bát vào cối; người tạp dề sọc xanh (quay điện thoại),trung,cơm,ok
+IMG_2025121708361217.MOV,10.0,21.0,F_SATDAY_DEMO,Tay cho bông cải xanh vào cối,trung,rau,ok
+IMG_2025121708361217.MOV,22.0,27.0,F_SATDAY_DEMO,Kẹp thêm cà rốt và củ vào cối,trung,rau củ,ok
+IMG_2025121708361217.MOV,28.0,50.0,F_SATDAY_DEMO,Cối đầy rau củ đứng yên; tay thao tác phía sau,trung,rau củ,tay lướt qua khung nhiều
+IMG_2025121708361217.MOV,52.0,61.0,F_SATDAY_DEMO,Chỉnh rau trong cối rồi đậy nắp,cận,rau củ,ok
+IMG_2025121708361217.MOV,61.5,68.0,F_SATDAY_DEMO,Cối đầy rau củ đã đậy nắp; đứng yên,cận,rau củ,ok
+IMG_2025121708361217.MOV,68.5,73.9,F_SATDAY_DEMO,Lắp thân máy lên cối đầy rau củ,cận,rau củ,ok
+IMG_2025121708361224.MOV,0.0,2.0,F_VESINH,Tay mở nắp cối,cận,,ok
+IMG_2025121708361224.MOV,2.0,5.0,F_DUNGTICH,2 tay cầm cối nhìn từ trên; còn ít đồ dưới đáy,top-down,,ok
+IMG_2025121708361224.MOV,5.5,8.0,F_VESINH|F_INOX,Nhấc lưỡi dao khỏi cối,cận,,ok
+IMG_2025121708361224.MOV,8.5,16.8,F_THUYTINH,Cối thuỷ tinh đứng yên; còn chút đồ ăn dưới đáy,cận,,ok
+IMG_202512170851094.MOV,0.0,7.0,HERO,KOL tạp dề sọc xanh cầm máy trước bụng (không thấy mặt; quay điện thoại),trung,,ok
+IMG_202512170851094.MOV,8.0,15.0,HERO,KOL đặt máy lên bàn và đưa tay giới thiệu,trung,,ok
+IMG_202512170851094.MOV,16.0,26.2,HERO,KOL cầm máy trước bụng; góc gần hơn,trung,,ok
+IMG_202512170851095.MOV,0.0,7.0,HERO,KOL tạp dề sọc giữ máy trên bàn bếp (không thấy mặt),trung,,ok
+IMG_202512170851095.MOV,8.0,14.0,F_VESINH,Tháo thân máy và nắp; bày các bộ phận trên bàn,trung,,ok
+IMG_202512170851095.MOV,22.0,31.0,F_SATDAY_DEMO,Kẹp gắp đồ ăn từ bát vào cối; toàn cảnh bàn,trung,,ok
+IMG_202512170851095.MOV,32.0,41.0,F_SATDAY_DEMO,Đậy nắp rồi lắp thân máy,trung,,ok
+IMG_202512170851095.MOV,41.0,45.5,HERO,Cắm điện; máy đứng trên bàn bếp,trung,,ok
+IMG_202512170851095.MOV,46.0,50.0,KHAC,Lia qua thớt cà rốt + bát thịt bò + bàn bếp,toàn,cà rốt thịt,lia nhanh
+IMG_202512170851095.MOV,64.0,71.0,HERO,KOL tạp dề đứng sau máy; thớt cà rốt + nấm phía trước,trung,cà rốt nấm,ok
+IMG_202512170851096.MOV,0.0,9.0,F_NHANXAY,KOL tạp dề sọc cười và ấn máy; bếp nhà (quay điện thoại),trung,,ok
+IMG_202512170851096.MOV,10.0,22.0,HERO,Máy đứng riêng trên bàn bếp; KOL ra khỏi khung,trung,,ok
+IMG_202512170851096.MOV,24.0,33.0,F_NHANXAY,KOL cười và ấn máy,trung,,ok
+IMG_202512171120521.MOV,0.0,4.6,HERO,KOL đặt máy xuống bàn,trung,,ok
+IMG_202512171125220.MOV,0.0,3.0,F_NHANXAY,Cận tay ấn máy,cận,,ok
+IMG_202512171125220.MOV,4.0,16.0,HERO,Máy đứng trên bàn bếp; người đi lại phía sau,cận,,ok
+IMG_202512171125220.MOV,17.0,24.8,F_NHANXAY,Tay ấn máy xay; đồ trong cối nhuyễn dần,cận,,ok
+IMG_4948-new.mp4,0.0,6.2,F_VESINH,Rửa thân máy bằng miếng rửa bọt xà phòng ở bồn đen; cối và lưỡi dao trong bồn (quay điện thoại),top-down,,ok
+IMG_4949.MOV,0.0,9.9,F_VESINH,Rửa nắp bằng miếng rửa bọt xà phòng ở bồn đen,top-down,,ok
+IMG_4950.MOV,0.0,9.3,F_VESINH,Rửa cối dưới vòi nước bằng miếng rửa bọt xà phòng ở bồn đen,cận,,ok
+IMG_4951.MOV,0.0,6.5,F_VESINH,Xối cối thuỷ tinh dưới vòi nước,cận,,ok
+IMG_4951.MOV,7.0,12.8,F_VESINH|F_INOX,Rửa cụm lưỡi dao dưới vòi nước,cận,,ok
+IMG_4954.MOV,0.0,10.4,KHAC,KOL tạp dề rửa giá lưới tròn ở bồn; máy xay đứng góc dưới,trung,,không phải bộ phận máy xay
+IMG_5136.MOV,0.0,11.0,HERO,KOL tạp dề sọc cầm máy trước bụng; cười,trung,,ok
+IMG_5136.MOV,13.5,17.0,HERO,Máy xay đứng trên bàn; KOL đứng sau cười,trung,,ok
+IMG_5136.MOV,22.0,34.0,KHAC,KOL bày nồi Bear khác cạnh máy xay,trung,,sản phẩm khác
+IMG_5136.MOV,35.0,38.2,HERO,KOL cầm máy xay trước bụng; cười,trung,,ok
+IMG_5137.MOV,0.0,3.0,HERO,KOL tạp dề cười cầm máy trước bụng,trung,,ok
+IMG_5137.MOV,3.5,9.5,HERO,KOL đặt máy xuống bàn và đưa tay giới thiệu,trung,,ok
+IMG_5137.MOV,10.0,16.0,KHAC,KOL đặt nồi Bear khác cạnh máy xay,trung,,sản phẩm khác
