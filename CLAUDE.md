@@ -1,6 +1,6 @@
 # Dự án: Tự động hoá dựng video ads Sube → CapCut
 
-> Đọc toàn bộ file này trước khi làm. Cập nhật lần cuối: 22/11/2026.
+> Đọc toàn bộ file này trước khi làm. Cập nhật lần cuối: 23/11/2026.
 
 ## Người dùng
 - Tên gọi: **Yan** (Hải Yến). Xưng **"mình"**, trả lời **tiếng Việt**.
@@ -15,14 +15,16 @@
 Video ads Sube có cấu trúc lặp lại, chủ yếu khác nhau ở phần hook. Mục tiêu: từ voice thô + kịch bản + kho source, tự động xuất ra bộ clip đã cắt đúng độ dài, đánh số thứ tự, cùng file phụ đề và bảng mốc text/SFX. Yan kéo vào CapCut rồi chỉnh tiếp.
 
 ## Cấu trúc folder trên máy Yan (Windows)
+Repo nằm thẳng trong folder làm việc trên ổ mạng phòng Media (`Y:` = `\\192.168.70.10\Phòng Media`):
 ```
-D:\Sube\                      ← mở Claude ở đây
-├── CLAUDE.md                 ← chỉ chứa dòng @phmhyen/CLAUDE.md
-├── phmhyen\                  ← repo này
-├── source\<mã SP>\           ← kho source gốc, KHÔNG sửa/xoá
+Y:\0. TÀI NGUYÊN MEDIA\Source Yến\Ads x Claude\   ← repo này, mở Claude ở đây
+├── CLAUDE.md, rules\, tools\, docs\, analysis\
+├── Source quay gốc\<mã SP>\  ← kho source gốc, KHÔNG sửa/xoá. Git bỏ qua (.git/info/exclude)
 ├── input\<tên video>\        ← voice thô + kịch bản của video cần dựng
 └── output\<tên video>\       ← đầu ra
 ```
+- Ổ mạng: git cần `safe.directory` cho folder này (đã thêm trên máy Yan). Đọc/ghi chậm hơn ổ trong máy, lập chỉ mục source sẽ lâu hơn.
+- `Source quay gốc\` và file voice/video trong `input\`, `output\` là dữ liệu nặng, **không commit** lên GitHub.
 
 ## Trong repo này
 | Đường dẫn | Nội dung |
@@ -62,7 +64,7 @@ output\<tên video>\
 ```
 
 ## Việc đang chờ (theo thứ tự)
-1. Yan cài đặt theo `docs/huong-dan-cai-dat-windows.md` → kiểm tra Claude đọc được bối cảnh.
+1. ~~Yan cài đặt theo `docs/huong-dan-cai-dat-windows.md`~~ Đã cài xong 23/11/2026 (git, Python 3.12, ffmpeg 9.1, faster-whisper 1.2.1), repo chuyển sang folder Y: ở trên. Còn: kiểm tra Claude đọc được bối cảnh khi mở phiên mới.
 2. Yan gửi thông tin brand (guideline, mã màu, font, ảnh cài đặt template CapCut, quy ước tên preset) → viết `rules/brand/bear.md`, `rules/brand/bear-me-be.md`.
 3. Thử **tạo draft CapCut mới** bằng thư viện cộng đồng (VectCutAPI/CapCutAPI có kèm MCP server, hoặc pyCapCut / pyJianYingDraft): tạo draft nhỏ gồm 3 clip + voice + 1 text → chép vào thư mục draft của CapCut → mở bằng bản CapCut của Yan xem có chạy không. Lưu ý:
    - Đây là công cụ không chính thức, CapCut cập nhật có thể làm hỏng. Đọc code trước khi cài.
@@ -80,7 +82,7 @@ output\<tên video>\
 - Sửa một cảnh: Claude xuất lại đúng file, giữ số thứ tự. Yan dùng Replace (Thay thế) trong CapCut.
 
 ## Nguyên tắc khi làm
-- **Không sửa/xoá file gốc** trong `source\` hay voice. Mọi đầu ra ghi vào `output\`.
+- **Không sửa/xoá file gốc** trong `Source quay gốc\` hay voice. Mọi đầu ra ghi vào `output\`.
 - Viết script tái sử dụng được (Python + ffmpeg), lưu trong `tools/`.
 - Báo thời gian ước tính trước mỗi bước lớn; hỏi lại khi quy tắc chưa rõ.
 - Lập chỉ mục chạy lâu: nhắc Yan cắm sạc, tắt chế độ ngủ.
