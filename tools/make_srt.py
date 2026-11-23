@@ -5,6 +5,7 @@ Hai bên được so khớp mềm từng từ (bỏ dấu, chấp nhận nhận 
 
 Cách dùng:
     python tools/make_srt.py script.txt whisper.json out.srt [--max-words 4] [--max-dur 1.6]
+Trong script.txt có thể đặt dấu | để ép xuống dòng (giữ nguyên từ ghép như "nấu nướng", "màn hình").
 whisper.json: list các đoạn, mỗi đoạn có "words": [[start, end, word], ...]
 """
 import argparse
@@ -91,17 +92,32 @@ def word_times(script_words, asr_words):
     return times, len(mp)
 
 
-def group_cues(words, times, max_words, max_dur, pause=0.25):
-    cues, cur = [], []
+def group_cues(words, times, max_words, max_dur, pause=0.25, forced=frozenset()):
+    """Tách cụm ở dấu câu / chỗ nghỉ / dấu | trong file lời, rồi chia đều mỗi cụm
+    (tránh dòng chỉ còn 1 chữ lẻ). forced: chỉ số từ có dấu | ngay sau."""
+    phrases, cur = [], []
     for i, w in enumerate(words):
         cur.append(i)
         last = i == len(words) - 1
         gap = (times[i + 1][0] - times[i][1]) if not last else 0
-        dur = times[i][1] - times[cur[0]][0]
-        if (last or PUNCT_BREAK.search(w) or len(cur) >= max_words
-                or dur >= max_dur or gap >= pause):
-            cues.append(cur)
+        if last or i in forced or PUNCT_BREAK.search(w) or gap >= pause:
+            phrases.append(cur)
             cur = []
+    cues = []
+    for ph in phrases:
+        k = -(-len(ph) // max_words)  # số dòng tối thiểu
+        while True:
+            size, extra = divmod(len(ph), k)
+            parts, pos = [], 0
+            for j in range(k):
+                n = size + (1 if j < extra else 0)
+                parts.append(ph[pos:pos + n])
+                pos += n
+            too_long = any(times[p[-1]][1] - times[p[0]][0] > max_dur and len(p) > 2 for p in parts)
+            if not too_long or k >= len(ph):
+                break
+            k += 1
+        cues += parts
     return cues
 
 
@@ -123,11 +139,18 @@ def main():
     a = ap.parse_args()
 
     text = open(a.script, encoding="utf-8").read()
-    words = text.split()
+    # dấu | trong file lời = ép xuống dòng (không hiện ra), để không cắt ngang từ ghép
+    words, forced = [], set()
+    for tok in text.replace("|", " | ").split():
+        if tok == "|":
+            if words:
+                forced.add(len(words) - 1)
+        else:
+            words.append(tok)
     segs = json.load(open(a.whisper_json, encoding="utf-8"))
     asr = [w for s in segs for w in s["words"] if norm(w[2])]
     times, matched = word_times(words, asr)
-    cues = group_cues(words, times, a.max_words, a.max_dur)
+    cues = group_cues(words, times, a.max_words, a.max_dur, forced=frozenset(forced))
 
     out = []
     for n, c in enumerate(cues, 1):
