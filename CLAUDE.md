@@ -34,6 +34,8 @@ Y:\0. TÀI NGUYÊN MEDIA\Source Yến\Ads x Claude\   ← repo này, mở Claude
 | `rules/brand/` | Quy tắc text theo 2 nhãn: `chung.md` (font chung, so sánh, chọn nhãn theo mã), `bear.md` (Bear Official), `bear-me-be.md` (Bear mẹ bé). Nguồn ảnh/font gốc ở `Brand guildeline/` |
 | `analysis/<mã>/` | Bảng phân cảnh video mẫu (`shots_video*.csv`), kết quả whisper, kịch bản đối chiếu |
 | `tools/transcribe.py` | faster-whisper → JSON mốc từng từ. Giải mã bằng ffmpeg (thư viện `av` trên máy Yan lệch phiên bản, gọi thẳng file sẽ lỗi `metadata_errors`) |
+| `.claude/skills/xu-ly-voice-sub/` | **Skill xử lý voice + phụ đề**: voice thô → MP4 voice sạch + .srt kéo vào CapCut. Yan nhờ xử lý voice / làm sub thì làm theo skill này |
+| `tools/soat_lap.py` | Soát lần đọc lặp/đọc vấp: mốc từng từ (đánh dấu từ kéo dài), cặp câu giống nhau, khoảng lặng, whisper lại từng đoạn `--chunks` |
 | `tools/clean_voice.py` | Làm sạch voice: `--drop` bỏ lần đọc hỏng, rút khoảng lặng, -13 LUFS, `--prepend` ghép tiếng hook KOL lên đầu |
 | `tools/retime.py` | Quy đổi mốc `edit_map`/overlay/SFX khi làm sạch lại voice (bỏ thêm câu, đổi tốc độ) |
 | `tools/build_clips.py` | Đọc `edit_map.csv` → cắt `clips/NN_nhom.mp4` (1080x1920, 30fps, tắt tiếng) + `preview.mp4` có phụ đề |
@@ -82,6 +84,7 @@ output\<tên video>\
    - Voice thô rất nhỏ (khoảng -41 LUFS): dùng ngưỡng lặng `--noise -48`, ngưỡng -35 cắt vào chữ.
    - Whisper hay **gộp 2 lần đọc lặp thành 1** (dấu hiệu: một chữ kéo dài >1s). Soát: chạy whisper lại trên `voice_clean.wav`, và whisper riêng từng đoạn nghi ngờ trên voice gốc. D24 có 4 chỗ lặp, lần đầu mình chỉ bắt được 1.
    - Voice **mặc định tăng tốc 1.07x cho mọi video** (Yan chốt 23/11/2026; `clean_voice.py` đã để mặc định, clip hook KOL ghi cột `toc_do` = 1.07).
+   - Chỗ nghỉ voice: nghỉ ngắn ~0.2s, hết câu ~0.3s; phụ đề 4–6 chữ/dòng, không cắt ngang từ ghép (Yan chốt 23/11/2026 khi làm voice "Một chiếc nồi"; `clean_voice.py`, `make_srt.py` đã để mặc định).
    - Hook KOL nói trực tiếp: cắt tiếng từ clip, ghép vào đầu voice (`--prepend`). Mọi clip đều tắt tiếng, chỉ còn một track voice.
    - Cảnh bấm giờ: đọc đồng hồ trên khung hình, chọn điểm vào sao cho đồng hồ chạm 8s đúng lúc voice nói "8 giây".
 

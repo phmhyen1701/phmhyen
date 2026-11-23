@@ -2,12 +2,13 @@
 
 Cách dùng:
     py -3.12 tools/clean_voice.py voice.m4a whisper.json out_dir [--drop 12.3-18.9 --drop ...]
-        [--keep-gap 0.12] [--min-gap 0.25] [--noise -35] [--lufs -13] [--speed 1.07 (mặc định)]
+        [--keep-gap 0.2] [--keep-gap-long 0.32] [--long-thresh 0.6] [--min-gap 0.25] [--noise -35] [--lufs -13] [--speed 1.07 (mặc định)]
         [--prepend hook.MP4@a-b --prepend-json hook.json]
     Voice thô Sube thường rất nhỏ (~-41 LUFS): dùng --noise -48, ngưỡng -35 cắt vào chữ.
 
 - --drop: các khoảng (giây, theo voice gốc) cần bỏ, ví dụ lần đọc hỏng trước lần đọc trọn vẹn cuối.
-- Khoảng lặng (ffmpeg silencedetect) dài hơn --min-gap được rút về --keep-gap (theo rules/chung.md mục 2).
+- Khoảng lặng (ffmpeg silencedetect) dài hơn --min-gap được rút về --keep-gap; khoảng lặng >= --long-thresh
+  (thường là hết câu) rút về --keep-gap-long (theo rules/chung.md mục 2, Yan chốt 23/11/2026).
 - Nối các đoạn bằng crossfade 8ms để không bị tiếng tách.
 Đầu ra trong out_dir:
     voice_clean.wav       48 kHz mono, -13 LUFS, đỉnh <= -1 dBTP
@@ -90,7 +91,10 @@ def main():
     ap.add_argument("whisper_json")
     ap.add_argument("out_dir")
     ap.add_argument("--drop", action="append", default=[])
-    ap.add_argument("--keep-gap", type=float, default=0.12)
+    ap.add_argument("--keep-gap", type=float, default=0.2)
+    ap.add_argument("--keep-gap-long", type=float, default=0.32,
+                    help="khoảng lặng gốc >= --long-thresh (thường là hết câu) rút về giá trị này thay vì --keep-gap")
+    ap.add_argument("--long-thresh", type=float, default=0.6)
     ap.add_argument("--min-gap", type=float, default=0.25)
     ap.add_argument("--noise", type=float, default=-35)
     ap.add_argument("--lufs", type=float, default=-13.0)
@@ -108,8 +112,9 @@ def main():
     # khoảng lặng dài: bỏ phần giữa, giữ keep_gap/2 ở mỗi bên
     sil_cuts = []
     for s, e in silences(a.audio, a.noise, a.min_gap):
-        h = a.keep_gap / 2
-        if e - s > a.keep_gap:
+        keep_g = a.keep_gap_long if (a.keep_gap_long and e - s >= a.long_thresh) else a.keep_gap
+        h = keep_g / 2
+        if e - s > keep_g:
             sil_cuts.append((s + h, e - h))
     keep = subtract([(0.0, dur)], drops + sil_cuts)
 

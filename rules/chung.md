@@ -59,7 +59,7 @@ Voice không nhắc ý nào thì không dùng sticker đó.
 
 ### Làm sạch voice (Yan duyệt 22/11)
 - Câu đọc nhiều lần: **giữ lần đọc trọn vẹn cuối cùng**.
-- Khoảng lặng dài: rút về **0.1–0.15s**, giữ hơi thở tự nhiên.
+- Khoảng lặng dài: nghỉ ngắn (dấu phẩy, giữa ý) còn **~0.2s**, nghỉ hết câu còn **~0.3s** (đo sau khi tăng tốc), giữ hơi thở tự nhiên. *(Yan chốt 23/11: 0.1–0.15s nghe gấp)*
 - Câu có trong kịch bản mà voice không đọc thì bỏ, voice thật là chuẩn.
 - **Tăng tốc voice 1.07x** (giữ cao độ) cho mọi video. Hook KOL nói trực tiếp cũng chạy 1.07x để khớp môi. *(Yan chốt 23/11)*
 
@@ -103,8 +103,9 @@ Voice không nhắc ý nào thì không dùng sticker đó.
   - Video **nhiều text overlay** (nhãn tính năng, pill câu hỏi, sticker): **không có phụ đề**.
   - Video **thuần storytelling** (kể chuyện, ít nhãn): **có phụ đề**.
   - Mình luôn xuất `.srt`, Yan quyết định có import hay không.
-- Kiểu karaoke, 2–4 từ/dòng, đặt giữa phía dưới. Chữ trắng viền, một từ khoá to hơn, màu xanh lá/vàng.
-- Xuất `.srt`: **chữ lấy từ kịch bản**, **thời gian lấy từ whisper** (`tools/make_srt.py`). Ngắt dòng ở dấu câu, tối đa 4 từ hoặc 1.6s.
+- Kiểu karaoke, **4–6 từ/dòng** (2–4 từ bị vụn, Yan chốt 23/11), đặt giữa phía dưới. Chữ trắng viền, một từ khoá to hơn, màu xanh lá/vàng.
+- Xuất `.srt`: **chữ lấy từ kịch bản**, **thời gian lấy từ whisper** (`tools/make_srt.py`). Ngắt dòng theo cụm nghĩa, tối đa 6 từ: dấu chấm/hỏi và chỗ voice ngừng hơi thì xuống dòng, dấu phẩy không bắt buộc. Không cắt ngang từ ghép ("nấu nướng", "màn hình", "ưu đãi"): đặt dấu `|` trong file lời để ngắt tay.
+- Voice không có kịch bản: lấy chữ từ whisper, sửa tay lỗi nhận sai, lưu `loi_voice.txt` trong output rồi chạy `make_srt.py` như thường.
 - Yan import vào CapCut (Captions → Import) rồi áp style/animation hàng loạt. *Đang chờ Yan thử xem highlight theo từng từ có chạy với file .srt không.*
 
 ## 6. Nhãn overlay

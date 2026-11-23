@@ -4,7 +4,7 @@ Chữ lấy từ kịch bản (không lỗi chính tả), thời gian lấy từ
 Hai bên được so khớp mềm từng từ (bỏ dấu, chấp nhận nhận sai gần đúng).
 
 Cách dùng:
-    python tools/make_srt.py script.txt whisper.json out.srt [--max-words 4] [--max-dur 1.6]
+    python tools/make_srt.py script.txt whisper.json out.srt [--max-words 6] [--max-dur 2.6] [--break-punct '.?!…']
 Trong script.txt có thể đặt dấu | để ép xuống dòng (giữ nguyên từ ghép như "nấu nướng", "màn hình").
 whisper.json: list các đoạn, mỗi đoạn có "words": [[start, end, word], ...]
 """
@@ -134,9 +134,13 @@ def main():
     ap.add_argument("script")
     ap.add_argument("whisper_json")
     ap.add_argument("out_srt")
-    ap.add_argument("--max-words", type=int, default=4)
-    ap.add_argument("--max-dur", type=float, default=1.6)
+    ap.add_argument("--max-words", type=int, default=6)
+    ap.add_argument("--max-dur", type=float, default=2.6)
+    ap.add_argument("--break-punct", default=".?!…",
+                    help="dấu câu bắt buộc xuống dòng; dấu phẩy không ép, ngắt tay bằng | (Yan chốt 23/11/2026)")
     a = ap.parse_args()
+    global PUNCT_BREAK
+    PUNCT_BREAK = re.compile("[" + re.escape(a.break_punct) + "]$")
 
     text = open(a.script, encoding="utf-8").read()
     # dấu | trong file lời = ép xuống dòng (không hiện ra), để không cắt ngang từ ghép
