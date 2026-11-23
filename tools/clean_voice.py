@@ -153,9 +153,18 @@ def main():
     os.makedirs(a.out_dir, exist_ok=True)
     out_wav = os.path.join(a.out_dir, "voice_clean.wav")
     tempo = f"atempo={a.speed:.4f}," if abs(a.speed - 1) > 1e-6 else ""  # giữ cao độ giọng
-    subprocess.run([FFMPEG, "-nostdin", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1",
-                    "-i", "-", "-af", f"{tempo}alimiter=limit={peak_lim:.4f}:level=disabled",
-                    "-c:a", "pcm_s16le", out_wav], input=y.astype(np.float32).tobytes(), check=True)
+    # bộ giới hạn đỉnh kéo độ lớn xuống (voice nhiều âm bật hơi): đo lại file cuối, bù gain tới khi đạt --lufs
+    extra = 0.0
+    for _ in range(4):
+        yy = (y * (10 ** (extra / 20))).astype(np.float32)
+        subprocess.run([FFMPEG, "-nostdin", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "1",
+                        "-i", "-", "-af", f"{tempo}alimiter=limit={peak_lim:.4f}:level=disabled",
+                        "-c:a", "pcm_s16le", out_wav], input=yy.tobytes(), check=True)
+        diff = a.lufs - loudness(decode(out_wav))
+        if abs(diff) < 0.2:
+            break
+        extra += diff
+    gain_db += extra
     sp = a.speed
 
     segs = json.load(open(a.whisper_json, encoding="utf-8"))
