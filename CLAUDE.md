@@ -33,6 +33,10 @@ Y:\0. TÀI NGUYÊN MEDIA\Source Yến\Ads x Claude\   ← repo này, mở Claude
 | `rules/sp/<mã>.md` | Quy tắc riêng từng mã: từ khoá voice → nhóm source, nhãn overlay. Đã có: `5H02D24`, `045KN`, `5H12V78` |
 | `rules/brand/` | Quy tắc text theo 2 nhãn: `chung.md` (font chung, so sánh, chọn nhãn theo mã), `bear.md` (Bear Official), `bear-me-be.md` (Bear mẹ bé). Nguồn ảnh/font gốc ở `Brand guildeline/` |
 | `analysis/<mã>/` | Bảng phân cảnh video mẫu (`shots_video*.csv`), kết quả whisper, kịch bản đối chiếu |
+| `tools/transcribe.py` | faster-whisper → JSON mốc từng từ. Giải mã bằng ffmpeg (thư viện `av` trên máy Yan lệch phiên bản, gọi thẳng file sẽ lỗi `metadata_errors`) |
+| `tools/clean_voice.py` | Làm sạch voice: `--drop` bỏ lần đọc hỏng, rút khoảng lặng, -13 LUFS, `--prepend` ghép tiếng hook KOL lên đầu |
+| `tools/retime.py` | Quy đổi mốc `edit_map`/overlay/SFX khi làm sạch lại voice (bỏ thêm câu, đổi tốc độ) |
+| `tools/build_clips.py` | Đọc `edit_map.csv` → cắt `clips/NN_nhom.mp4` (1080x1920, 30fps, tắt tiếng) + `preview.mp4` có phụ đề |
 | `tools/make_srt.py` | Tạo .srt: chữ lấy từ kịch bản, thời gian lấy từ whisper (so khớp mềm) |
 | `tools/shot_table.py` | Tạo bảng phân cảnh nháp cho video mẫu (mốc cắt cảnh + lời voice) |
 | `tools/sfx_classify.py` | Nhận diện SFX + kiểu nhạc trong video mẫu (cần tách voice bằng demucs trước) |
@@ -73,7 +77,13 @@ output\<tên video>\
    - Không bao giờ ghi vào project gốc của Yan.
 4. Kiểm tra computer use trong app Claude Desktop (Settings → System/Capabilities → Computer use). Thử đặt 3–5 nhãn text + 2–3 SFX trên project mẫu, đo tốc độ và độ chính xác.
 5. Lập chỉ mục kho source cho mã làm thử đầu tiên (Yan chọn mã).
-6. Dựng thử 1 video hoàn chỉnh: voice thô + kịch bản → đầu ra như trên.
+6. Dựng thử 1 video hoàn chỉnh: voice thô + kịch bản → đầu ra như trên. **23/11/2026: đã dựng `output\D24 Thí nghiệm 8 giây\`** (đầu vào ở `Source từng video\<tên video>\`), chờ Yan duyệt preview + kéo vào CapCut.
+   Rút ra khi dựng:
+   - Voice thô rất nhỏ (khoảng -41 LUFS): dùng ngưỡng lặng `--noise -48`, ngưỡng -35 cắt vào chữ.
+   - Whisper hay **gộp 2 lần đọc lặp thành 1** (dấu hiệu: một chữ kéo dài >1s). Soát: chạy whisper lại trên `voice_clean.wav`, và whisper riêng từng đoạn nghi ngờ trên voice gốc. D24 có 4 chỗ lặp, lần đầu mình chỉ bắt được 1.
+   - Voice **mặc định tăng tốc 1.07x cho mọi video** (Yan chốt 23/11/2026; `clean_voice.py` đã để mặc định, clip hook KOL ghi cột `toc_do` = 1.07).
+   - Hook KOL nói trực tiếp: cắt tiếng từ clip, ghép vào đầu voice (`--prepend`). Mọi clip đều tắt tiếng, chỉ còn một track voice.
+   - Cảnh bấm giờ: đọc đồng hồ trên khung hình, chọn điểm vào sao cho đồng hồ chạm 8s đúng lúc voice nói "8 giây".
 
 ## Cách đưa vào CapCut (thứ tự ưu tiên)
 1. Ghi thẳng draft CapCut, nếu bước 3 cho thấy file không mã hoá.

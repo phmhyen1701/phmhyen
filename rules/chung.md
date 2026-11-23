@@ -61,6 +61,7 @@ Voice không nhắc ý nào thì không dùng sticker đó.
 - Câu đọc nhiều lần: **giữ lần đọc trọn vẹn cuối cùng**.
 - Khoảng lặng dài: rút về **0.1–0.15s**, giữ hơi thở tự nhiên.
 - Câu có trong kịch bản mà voice không đọc thì bỏ, voice thật là chuẩn.
+- **Tăng tốc voice 1.07x** (giữ cao độ) cho mọi video. Hook KOL nói trực tiếp cũng chạy 1.07x để khớp môi. *(Yan chốt 23/11)*
 
 ### Cắt cảnh
 - **Mỗi cảnh khớp với một cụm ý của voice.** Cắt đúng chỗ ngắt câu hoặc dấu phẩy, không cắt giữa từ.
