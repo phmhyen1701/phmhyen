@@ -172,4 +172,4 @@ Rút từ video Yan đã dựng (045KN V3, 5H02D24 "Thí nghiệm 8 giây") và 
 
 ## Log chạy thử
 
-Xem `test-log.md`.
+Xem `test-log.md`. Kết quả chạy thử trên việc thật (kịch bản M54 bản mẹ bé, Yan duyệt 25/11): `chay-thu/M54-me-be/bang-dung.md` + `chay-thu/M54-me-be/insight-bear.md`.

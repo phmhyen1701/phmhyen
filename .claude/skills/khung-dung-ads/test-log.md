@@ -20,7 +20,7 @@
 | TA + insight | Chạy `insight-bear` phiên bản 1 (Sube Hub): 3 nhóm, 5 insight, nguồn suy luận (thông tin SP lấy từ kịch bản, chưa có Base, chưa có lời khách) |
 | Thời gian | `insight-bear` ~10 phút, bảng dựng ~8 phút |
 | Kết quả | 14 cảnh (bản 1: 26 cảnh vụn; bản 2: 12 cảnh nhưng tả quá chi tiết). Cả 5 insight đều có cảnh thể hiện; 3 cảnh đầu (trước khi SP xuất hiện) đều gắn I1; 2 cảnh CTA không gắn insight |
-| File | `output/M54 mẹ bé/insight-bear.md`, `output/M54 mẹ bé/bang-dung.md` |
+| File | `chay-thu/M54-me-be/insight-bear.md`, `chay-thu/M54-me-be/bang-dung.md` (bản Yan duyệt) |
 
 ### Bản nháp đầu bị Yan trả lại (25/11/2026)
 
