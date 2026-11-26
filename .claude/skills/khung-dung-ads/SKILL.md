@@ -19,7 +19,7 @@ description: Lên khung dựng (bảng dựng từng cảnh) cho video ads Sube 
 
 | Đầu vào | Bắt buộc | Ghi chú |
 |---|---|---|
-| Kịch bản | Có | Hay gặp: **3 cột** (Phần / Mô tả cảnh / Voice), **5 cột** (Phần / Hành động / Voice over / Text Overlay / Note), hoặc **chỉ cột Voice**. Ảnh chụp đọc được |
+| Kịch bản | Có | Hay gặp: **2 cột** (Cảnh quay / Voice), **3 cột** (Phần / Mô tả cảnh / Voice), **5 cột** (Phần / Hành động / Voice over / Text Overlay / Note), hoặc **chỉ cột Voice**. Ảnh chụp đọc được. Cột cảnh quay / mô tả cảnh có sẵn thì là khung chính, rút gọn lại theo bước 3. "Trám" = cảnh chèn, "VJ" = người dẫn trong khung hình, "Ping" = ảnh nổi lên trên hình |
 | Mã + tên SP | Có | Để chạy `insight-bear` |
 | Kết quả `insight-bear` của mã này | Không | Có sẵn thì dùng luôn, không chạy lại |
 | Thông tin SP, lời khách thật | Không | Đưa cho `insight-bear`. Không có thì `insight-bear` vẫn chạy, ghi nguồn "suy luận" |
@@ -87,7 +87,7 @@ Ví dụ đúng mức (Yan chốt 25/11, kịch bản M54):
 | **Hình ảnh** | 2–10 chữ, ai làm gì. Viết "Bé khóc", "Bé bấm nút, nước không chảy" chứ không viết "show sản phẩm", cũng không tả bối cảnh chi tiết |
 | **Góc máy** | Một trong: **Toàn** (thấy cả người + bối cảnh, vd mẹ trong phòng ngủ) · **Trung** (nửa người, hoặc SP + mặt bàn) · **Cận** (tay + vật, hoặc mặt) · **Đặc tả** (chi tiết nhỏ: lưỡi dao, số trên màn hình, giọt nước) · **Top-down** (máy quay nhìn thẳng từ trên xuống). Ghi 1 góc chính |
 | **Lời đọc** | Chép đúng đoạn voice của cảnh (có thể nhiều câu) |
-| **Chữ trên hình** | **Rút từ khoá, 2–6 chữ**, giữ con số. Không chép nguyên lời đọc. Tên SP + mã ở cảnh SP xuất hiện. Nhãn ✅ cộng dồn qua các tính năng liền nhau. Kịch bản có cột Text Overlay thì lấy từ đó |
+| **Chữ trên hình** | **Rút từ khoá, 2–6 chữ**, giữ con số. Không chép nguyên lời đọc. Tên SP + mã ở cảnh SP xuất hiện. Nhãn ✅ cộng dồn qua các tính năng liền nhau. Kịch bản có cột Text Overlay thì lấy từ đó. Kịch bản ghi "Ping ảnh …" thì ghi ở cột này: `Ping ảnh: …` |
 | **Khoảnh khắc / nỗi đau** | `I_ · 2–5 chữ`. Ví dụ `I1 · chờ nước nguội`, `gỡ I4 · con táy máy`. Cảnh không chạm insight ghi `—` |
 | **Source** | Một trong 5 loại dưới đây |
 | **Hook / Ưu đãi / CTA** | `HOOK`, `SP XUẤT HIỆN`, `ƯU ĐÃI: <ý>`, `CTA` |
@@ -97,7 +97,7 @@ Ví dụ đúng mức (Yan chốt 25/11, kịch bản M54):
 | Loại | Khi nào | Ví dụ |
 |---|---|---|
 | `CÓ SẴN` | Cảnh SP: hero, demo tính năng, thành phẩm. Thường đã quay khi ra mã | Lắp cối, bấm nút, màn hình nhiệt độ, đổ cháo ra bát |
-| `QUAY RIÊNG` | Hook KOL / VJ nói, vlog, "nổ inbox": quay theo từng video | KOL cầm SP nói câu hook |
+| `QUAY RIÊNG` | Cảnh có KOL / VJ (hook, vlog, "nổ inbox", VJ thao tác SP ở thân video): quay theo từng video | KOL cầm SP nói câu hook; VJ lắp máy, VJ nhấc lòng nồi |
 | `UGC` | Cảnh đời thường quay điện thoại: mẹ con, bé ăn, đêm | Bé ăn cháo, mẹ bế con ngồi giường |
 | `QUAY MỚI` | Kịch bản cần mà gần như chắc kho không có: khoảnh khắc nỗi đau cụ thể, cảnh có người dùng SP trong bối cảnh nhà | Mẹ đứng bếp lắc bình 2h sáng |
 | `ĐỒ HOẠ` | **Cách cuối**, chỉ khi không quay được: vi khuẩn, so sánh số liệu. Tính năng "vô hình" (tự ngắt, khoá, chống tràn) thì quay **kết quả của nó** trên SP thật, không dùng đồ hoạ | Hiệu ứng vi khuẩn trên bình sữa |

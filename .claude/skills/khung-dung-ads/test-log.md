@@ -61,3 +61,42 @@
 | 10 | Đồ hoạ tự ngắt điện · ĐỒ HOẠ | Bấm rót nước nhưng nước không ra (đã khoá trẻ em / ngắt điện) · Cận | Tính năng "vô hình" vẫn quay được bằng kết quả của nó trên SP thật; đồ hoạ là cách cuối |
 
 Rà lại theo quy tắc mới, đổi thêm 4 cảnh cùng lỗi: 07 (bế con chạm nút → chạm nút, nước chảy vào bình sữa), 08 (bé ngủ yên → đèn ngủ của bình bật sáng), 09 (bé bấm nút → bấm khoá trẻ em trên bình), 13 (chồng đặt hàng → bình cạnh hộp SP). Cảnh quay mới giảm từ 10 xuống 5 (chỉ còn đoạn nỗi đau + đặt bình đầu giường + cảnh chốt). Đưa vào skill: bước 2 + chỗ hay sai #12; cảnh 10 → bảng 5 loại source (ĐỒ HOẠ là cách cuối) + chỗ hay sai #13.
+
+## Lần 2: Bear V78 "Bé thứ 2 chỉ tốn hơn 1 củ" (25/11/2026)
+
+| Mục | Nội dung |
+|---|---|
+| Kịch bản | Ảnh Yan gửi, **2 cột** (Cảnh quay / Voice), 7 dòng, chưa có voice |
+| Mã SP | WW-5H12V78 |
+| TA + insight | `insight-bear` **phiên bản 2** (chạy lại 26/11/2026): thông tin SP từ Base "Hồ sơ sản phẩm B2C" qua công cụ Sube Hub `ho_so_san_pham`; 3 nhóm, 4 insight; chưa có lời khách → suy luận trên thông tin SP. (Bản 25/11 dùng phiên bản 1, thông tin SP từ kịch bản + ghi chú 2 video cũ) |
+| Kết quả | 14 cảnh. Cả 4 insight đều có cảnh thể hiện; 3 cảnh trước khi SP xuất hiện đều gắn I1; 1 cảnh CTA không gắn insight. 6 cảnh VJ quay riêng, 1 cảnh có sẵn cần kiểm kho |
+| Cần xem nổi bật | Base **không có "FDA US"** (chỉ có chất liệu chuẩn y tế); "72 tiếng" Base xác nhận; câu so sánh "không nhiều máy làm được" không có căn cứ Base; hook "hơn 1 củ" chỉ khớp giá min TMĐT 1,59 triệu (niêm yết 2,59 triệu) |
+| Đổi khi chạy lại theo Base (26/11) | Insight: **I2** đổi từ "không biết tin vào đâu, cần giấy kiểm nghiệm" sang "không phân biệt được chất liệu, sợ mùi nhựa, bình ố vàng" (Base: thủy tinh không chì, inox 316, silicone không keo dán; hơi nước hạn chế vàng bình hơn UV); N2, N3 thêm chi tiết bối cảnh; I3, I4 thêm căn cứ Base (bảng cảm ứng nghiêng, 2 vùng chạy cùng lúc). Bảng dựng: cảnh **08** hình → "Cận bình thủy tinh, mâm inox", chữ "Kiểm nghiệm FDA US + Ping giấy kiểm nghiệm" → "Thủy tinh không chì · Inox 316"; cảnh 04 mã đủ WW-5H12V78; cảnh 06, 07, 09 sửa nhãn insight. Cần xem: thêm 08 (FDA, "toàn bộ"), 11 ("chuẩn kiểm nghiệm"), từ Base cấm, giá, phía khoang ở 06 |
+| File | `chay-thu/V78-be-thu-2/` |
+
+## Lần 3: Nồi lẩu NL05F "Lẩu cho nhà 3 thế hệ" (25/11/2026)
+
+| Mục | Nội dung |
+|---|---|
+| Kịch bản | Ảnh Yan gửi, 2 cột, 6 dòng, chưa có voice |
+| Mã SP | NL05F, mã mới, không có thông tin SP nào ngoài kịch bản |
+| TA + insight | `insight-bear` **phiên bản 2** (chạy lại 26/11/2026): thông tin SP từ Base "Hồ sơ sản phẩm B2C" qua công cụ Sube Hub `ho_so_san_pham`; 3 nhóm, 4 insight; chưa có lời khách → suy luận trên thông tin SP. (Bản 25/11 dùng phiên bản 1, thông tin SP chỉ có trong kịch bản) |
+| Kết quả | 12 cảnh. Cả 4 insight đều có cảnh thể hiện; 2 cảnh CTA không gắn insight. Hook đặt SP ngay cảnh 01, nỗi đau ở 02–03 (khác vị trí thường gặp, giữ theo kịch bản) |
+| Cần xem nổi bật | Base xác nhận 5L, 3–6 người, chiên/xào/canh/hầm, nồi rời đế bếp; **Base cấm ngâm đế nồi vào nước** (đụng cảnh rửa 08); câu so sánh "an toàn hơn nồi liền thân" không có căn cứ Base; "-50%" giá niêm yết thấp hơn giá min TMĐT; "giảm nửa giá 50%" lặp ý |
+| Đổi khi chạy lại theo Base (26/11) | Insight: **I4** đổi từ "rửa nồi thoải mái, sợ nước vào điện" sang "ăn xong dọn nhanh, nhấc nồi khỏi đế rửa riêng, không ngâm" (Base: lòng nồi chống dính, đế hồng ngoại rời; cấm ngâm đế); N3 thêm bối cảnh; I2 có căn cứ 1500W; I3 bỏ ý hấp (Base: không có xửng). Bảng dựng: cảnh **05** chữ → "1500W bắt nhiệt nhanh"; cảnh **07** hình → "VJ nhấc nồi khỏi đế bếp", chữ → "Nồi nhấc rời đế"; cảnh **08** chữ "không lo nước vào điện" → "Rửa riêng, chống dính". Cần xem: bỏ dòng "cả bảng chờ Base"; thêm không ngâm nồi (08), 07, 05, không hấp (09), giá -50% (11), gợi ý bảo hành 18 tháng |
+| File | `chay-thu/NL05F-lau-3-the-he/` |
+
+### Mình tự thấy khi chạy lần 2–3 (gặp ở cả 2 kịch bản → đã đưa vào skill)
+
+| # | Chỗ skill chưa ghi | Đã sửa |
+|---|---|---|
+| 1 | Kịch bản dạng 2 cột Cảnh quay / Voice | Bước 0: thêm dạng 2 cột; cột cảnh quay có sẵn là khung chính |
+| 2 | Chữ "Ping" (ảnh nổi lên trên hình) | Bước 0 giải nghĩa; bước 4 ghi `Ping ảnh: …` ở cột Chữ trên hình |
+| 3 | VJ thao tác SP ở thân video, không chỉ hook | Bảng source: `QUAY RIÊNG` gồm cả cảnh VJ ở thân video |
+
+### Cảnh Yan sửa (chờ Yan soát)
+
+| KB | Cảnh | Skill ra | Yan sửa thành | Vì sao |
+|---|---|---|---|---|
+| | | | | |
+
